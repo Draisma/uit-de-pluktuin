@@ -2,7 +2,7 @@
 
 Website van het seizoenskookboek *Uit de pluktuin 2026*: 90 recepten met de wekelijkse oogst van pluktuin De Gagelgaard, plus de twee eetclubmenu's met draaiboek.
 
-Statische site, gebouwd met [Astro](https://astro.build) en gehost op Cloudflare Pages.
+Statische site, gebouwd met [Astro](https://astro.build) en gehost op Cloudflare.
 
 ## Lokaal draaien
 
@@ -24,12 +24,14 @@ npm run build    # bouwt naar dist/
 | `scripts/extract.py` | Haalt de recepten uit de kookboek-pdf (`python3 extract.py` naast `boek.pdf`) |
 | `scripts/fotos.py` | Zet de originele foto's om naar webformaten |
 
-Een recept aanpassen? Bewerk `src/data/recepten.json` en push: Cloudflare Pages bouwt de site dan automatisch opnieuw.
+Een recept aanpassen? Bewerk `src/data/recepten.json` en push: Cloudflare bouwt de site dan automatisch opnieuw.
 
-## Cloudflare Pages
+## Cloudflare
 
-- Framework preset: Astro
+De site draait als Cloudflare Worker met statische assets (zie `wrangler.jsonc`), gekoppeld aan deze repo via Workers Builds.
+
 - Build command: `npm run build`
-- Output directory: `dist`
+- Deploy command: `npx wrangler deploy`
+- Worker-naam: `uit-de-pluktuin` (moet gelijk zijn aan `name` in `wrangler.jsonc`)
 - Node-versie: via `.node-version` (22)
-- Domein: https://kookboek.fldr.nl (custom domain in Pages)
+- Domein: https://kookboek.fldr.nl
