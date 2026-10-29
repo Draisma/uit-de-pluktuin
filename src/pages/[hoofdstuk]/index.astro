@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import Foto from '../../components/Foto.astro';
+import Tegel from '../../components/Tegel.astro';
+import { hoofdstukken, inhoud } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return hoofdstukken.map((h) => ({ params: { hoofdstuk: h.slug }, props: { h } }));
+}
+const { h } = Astro.props;
+const items = inhoud(h.slug);
+---
+<Base titel={h.titel} beschrijving={h.intro} hoofdstuk={h.slug} og={h.foto}>
+  <section class="opener wrap">
+    <figure><Foto id={h.foto} alt="" eager sizes="(max-width: 860px) 100vw, 440px" /></figure>
+    <div>
+      <span class="hs-nr">Hoofdstuk {h.nummer}</span>
+      <h1>{h.titel}</h1>
+      <p class="periode">{h.periode}</p>
+      <p class="intro">{h.intro}</p>
+      <p class="kapitaal">{items.length} {h.slug === 'eetclub' ? 'pagina’s' : 'recepten'}</p>
+    </div>
+  </section>
+  <section class="wrap">
+    <ul class="tegels">
+      {items.map((item) => <Tegel item={item} />)}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .opener { display: grid; grid-template-columns: minmax(0, 440px) minmax(0, 1fr); gap: clamp(28px, 6vw, 72px); align-items: center; padding-top: 48px; padding-bottom: 64px; }
+  .opener figure { margin: 0; border-radius: 4px; overflow: hidden; aspect-ratio: 4 / 4.4; }
+  .opener :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .hs-nr { font-family: var(--hand); font-size: 30px; color: var(--kleur); }
+  h1 { font-size: clamp(56px, 9vw, 104px); margin: 0 0 6px; }
+  .periode { font-style: italic; font-size: 22px; color: var(--gedempt); }
+  .intro { font-size: 19px; max-width: 34em; color: var(--inkt-2); }
+  @media (max-width: 860px) {
+    .opener { grid-template-columns: 1fr; padding-top: 24px; padding-bottom: 40px; }
+    .opener figure { aspect-ratio: 16 / 10; }
+  }
+</style>

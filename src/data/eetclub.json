@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "zomerse-gedeelde-tafel",
+    "type": "menu",
+    "pagina": 189,
+    "foto": "p188",
+    "seizoen": "zomer",
+    "titel": "Zomerse gedeelde tafel",
+    "ondertitel": "bloemkool met kruidig gehakt, biet-couscous met kip, salade en sperziebonen",
+    "personen": "Voor 5 personen",
+    "meta": ["start ca. 75 minuten voor het eten"],
+    "intro": [
+      "Op tafel: geroosterde bloemkool met kruidig gehakt & tahinsaus + biet-couscous met biologische kippendij & citroen-kwarksaus + frisse salade + sperziebonen",
+      "Met biologische kippendij in plaats van chorizo (semi-vegetariër/biovleeseter aan tafel). Tip: houd een deel van de bloemkool en couscous vleesvrij opgeschept, dan kan de semi-vegetariër ook zonder vlees prima mee-eten."
+    ],
+    "ingredienten": [
+      {"titel": "Geroosterde bloemkool met kruidig gehakt", "items": [
+        "1 grote bloemkool, in roosjes van gelijke grootte (ca. 4 cm)",
+        "4 el olijfolie",
+        "1 tl komijn + 1 tl gerookt paprikapoeder",
+        "600 g (biologisch) rundergehakt of lamsgehakt",
+        "1 rode ui, gesnipperd",
+        "2 tenen knoflook, fijngehakt",
+        "1 tl kaneel + 1 tl komijn + snuf chilivlokken",
+        "1 el tomatenpuree",
+        "handje basilicum, grof gehakt",
+        "handje pompoenpitten (droog geroosterd)",
+        "optioneel: granaatappelpitten"]},
+      {"titel": "Tahinsaus", "items": [
+        "6 el tahin", "sap van 1/2 citroen", "1 klein teentje knoflook, geperst", "6-9 el koud water", "snuf zout"]},
+      {"titel": "Biet-couscous met biologische kippendij", "items": [
+        "5 bieten (3 van de tuin + 2 van de super), geschild, in partjes van 2 cm",
+        "750 g biologische kippendij(filet), in blokjes van 3 cm",
+        "1,5 tl gerookt paprikapoeder + 1,5 tl komijn (voor de kip)",
+        "350 g couscous + 420 ml kokende groentebouillon",
+        "2-4 stengels Nieuw-Zeelandse spinazie, blad grof gesneden",
+        "1 rode ui, in halve ringen",
+        "rasp + sap van 1 citroen",
+        "4 el olijfolie",
+        "handje peterselie, gehakt"]},
+      {"titel": "Citroen-kwarksaus", "items": [
+        "250 g volle kwark", "rasp van 1/2 citroen + 1 el citroensap", "1 teentje knoflook, geperst", "snuf zout, scheutje water of melk tot sausdikte"]},
+      {"titel": "Frisse salade", "items": [
+        "1 krop sla, in stukken", "2-3 tomaten, in partjes", "1/2 rode ui, in dunne halve ringen", "handje peterselie, grof gehakt", "3 el olijfolie + 1 el citroensap + 1 tl mosterd + peper en zout"]},
+      {"titel": "Sperziebonen met knoflook en citroen", "items": [
+        "400-500 g sperziebonen, afgehaald", "2 tenen knoflook, in plakjes", "rasp van 1/2 citroen", "1 el olijfolie of klontje boter", "handje pompoenpitten (samen met die van de bloemkool roosteren)"]},
+      {"titel": "Erbij", "items": ["6-8 platbroden of pita's", "eventueel granaatappelpitten als finishing touch"]}
+    ],
+    "draaiboek": "draaiboek-zomerse-gedeelde-tafel"
+  },
+  {
+    "slug": "draaiboek-zomerse-gedeelde-tafel",
+    "type": "draaiboek",
+    "pagina": 191,
+    "foto": "p190",
+    "seizoen": "zomer",
+    "titel": "Draaiboek",
+    "ondertitel": "stap voor stap, start ca. 75 minuten voor het eten",
+    "hoort_bij": "zomerse-gedeelde-tafel",
+    "fasen": [
+      {"titel": "Voorbereiding (T-75 tot T-45)", "stappen": [
+        "Oven voorverwarmen op 210 °C (hetelucht). Twee bakplaten met bakpapier klaarleggen.",
+        "Bieten schillen (handschoenen aan!) en in partjes van 2 cm snijden. Husselen met 2 el olijfolie, peper en zout op bakplaat 1.",
+        "Bloemkool in roosjes snijden. Husselen met 2 el olijfolie, 1 tl komijn, 1 tl paprikapoeder, peper en zout op bakplaat 2.",
+        "Beide platen in de oven: bieten 30-35 min, bloemkool 25-30 min. Halverwege omscheppen en van plek wisselen. Klaar = zacht met donkere, gekarameliseerde randjes. (Klaar terwijl je verder werkt; zet daarna de oven op 80 °C om warm te houden.)",
+        "Kippendij in blokjes snijden en mengen met paprikapoeder, komijn, snufje zout. Laat op kamertemperatuur intrekken.",
+        "Pompoenpitten in een droge koekenpan 3-5 min roosteren tot ze poffen en kleuren. Direct uit de pan; verdeel in twee bakjes (bloemkool + sperziebonen)."]},
+      {"titel": "Sauzen en salade (T-45 tot T-30)", "stappen": [
+        "Tahinsaus: roer tahin, citroensap, knoflook en zout; klop er lepel voor lepel koud water door. Eerst wordt hij dik en korrelig, daarna weer glad en gietbaar; dat hoort zo. Consistentie: dikke yoghurt.",
+        "Kwarksaus: roer alle ingrediënten, verdun tot lobbig. Proef op zout en citroen. Beide sauzen in schaaltjes, koelkast.",
+        "Salade: sla, tomaat, ui en peterselie in een grote schaal. Dressing apart kloppen; pas aan tafel erover.",
+        "Sperziebonen 4-5 min beetgaar koken in gezouten water, afgieten, koud spoelen. Opzij zetten (worden zo opgebakken)."]},
+      {"titel": "Warme finish (T-30 tot T-0)", "stappen": [
+        "Waterkoker aan voor de bouillon. Couscous in een ruime schaal, 420 ml kokende bouillon erover, afdekken, 5 min wellen. Losmaken met vork; citroenrasp, citroensap en 2 el olijfolie erdoor. Afdekken en warm wegzetten.",
+        "Gehakt: bak de rode ui 3 min zacht in wat olie. Knoflook, kaneel, komijn, chili en tomatenpuree erbij, 1 min. Gehakt erbij en op hoog vuur in 6-8 min rul en bruin bakken. Op smaak brengen; deksel er schuin op, laagste vuur.",
+        "Kip: verhit 2 el olie in een grote (tweede) koekenpan op middelhoog-hoog vuur. Kip in één laag, niet direct bewegen; bak in 8-10 min rondom goudbruin en gaar (grootste blokje doorsnijden om te checken: niet meer roze). Haal uit de pan.",
+        "In hetzelfde kippenvet: rode ui 2 min, spinazieblad erbij tot net geslonken. Kip terug in de pan, even omscheppen.",
+        "Sperziebonen: in de bonenpan olie of boter verhitten, knoflookplakjes 30 sec, bonen erbij en 2-3 min omscheppend heet laten worden. Citroenrasp en pompoenpitten erdoor.",
+        "Platbrood kort in de nog warme oven."]},
+      {"titel": "Opdienen", "stappen": [
+        "Grote schaal 1: bloemkoolroosjes, gehakt eroverheen, tahinsaus erover gedrizzled, basilicum + pompoenpitten + evt. granaatappel.",
+        "Grote schaal 2: citroen-couscous, daarop de bietpartjes en de kip met spinazie en ui, peterselie erover. (Vleesvrije hoek: schep eerst een deel couscous + biet apart voor de semi-vegetariër.)",
+        "Salade met dressing, sperziebonen, platbrood en de kwarksaus erbij op tafel. Iedereen schept zelf."]}
+    ],
+    "tip": "Stap 1 t/m 10 kun je in de middag al doen. Dan rest 's avonds alleen de warme finish (30 min)."
+  },
+  {
+    "slug": "herfstdiner-voor-zes",
+    "type": "menu",
+    "pagina": 193,
+    "foto": "p192",
+    "seizoen": "herfst",
+    "titel": "Herfstdiner voor zes",
+    "ondertitel": "Woensdag 30 september, 6 personen",
+    "personen": "Voor 6 personen",
+    "meta": [],
+    "gangen": [
+      {"titel": "Voor", "gerechten": [{"naam": "Salade van veldsla, winterpostelein en andijvie met peer, gorgonzola en walnoten", "slug": "salade-van-veldsla-winterpostelein-en-andijvie"}]},
+      {"titel": "Hoofd", "noot": "op tafel om te delen", "gerechten": [
+        {"naam": "Bio kippendijen uit de oven met pompoen, winterwortel, rode ui en salie", "slug": "bio-kippendijen-uit-de-oven"},
+        {"naam": "Gestoofde palmkool en andijvie met knoflook, peper en citroen", "slug": "gestoofde-palmkool-en-andijvie"},
+        {"naam": "Romige orzo met Parmezaan, citroen en salieboter", "slug": "romige-orzo"}]},
+      {"titel": "Na", "gerechten": [{"naam": "IJs (bijv. vanille), eventueel met een lepel honing en geroosterde walnoten erover", "slug": null}]}
+    ],
+    "intro": [
+      "Alles is Italiaans-herfstig en past qua smaak bij elkaar (salie, knoflook, citroen). Het hoofdgerecht staat grotendeels zelf in de oven. Vlees: ca. 115 g bio kip per persoon, de groente doet het zware werk.",
+      "Wijntip: een soepele pinot noir past bij de kip, pompoen en salie."
+    ],
+    "dessert": {
+      "titel": "Dessert: ijs",
+      "items": ["ijs naar keuze (ca. 1 liter voor 6 personen)", "optioneel: 2 el honing + het apart gehouden handje geroosterde walnoten"],
+      "bereiding": "Schep het ijs in bolletjes, druppel wat honing erover en strooi de walnoten erop."
+    },
+    "draaiboek": [
+      {"titel": "Vanavond of woensdagochtend", "taken": ["Dressing kloppen, walnoten roosteren.", "IJs in de vriezer (check!)."]},
+      {"titel": "Woensdagmiddag", "taken": ["Oogsten (pluktuin open op woensdag 14:00-19:00). Ga op tijd, dan heb je rust.", "Groente wassen en snijden: pompoen, wortel, ui, palmkool, andijvie. Sla wassen en drogen."]},
+      {"titel": "T-75 min", "taken": ["Oven op 200 °C. Groenten op de bakplaten, marineren, kip inwrijven."]},
+      {"titel": "T-60 min", "taken": ["Groenten de oven in."]},
+      {"titel": "T-40 min", "taken": ["Kip en salie tussen de groenten, nog 25-30 minuten.", "Water voor de orzo opzetten."]},
+      {"titel": "T-15 min", "taken": ["Salade op tafel zetten (dressing en peer pas aan tafel). Voorgerecht eten terwijl de kip afbakt."]},
+      {"titel": "T-10 min (tussen voor en hoofd)", "taken": ["Orzo koken, salieboter maken.", "Palmkool en andijvie stoven.", "Kip eruit, citroen en peterselie erover. Alles in schalen op tafel."]},
+      {"titel": "Na", "taken": ["IJs met honing en walnoten."]}
+    ]
+  }
+]
