@@ -1,0 +1,214 @@
+---
+import Base from '../../layouts/Base.astro';
+import Foto from '../../components/Foto.astro';
+import { volgorde, hoofdstuk as zoekHoofdstuk, url, naam, eetclub, recepten } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return volgorde.map((item, i) => ({
+    params: { hoofdstuk: item.hoofdstuk, slug: item.slug },
+    props: { item, vorige: volgorde[i - 1] ?? null, volgende: volgorde[i + 1] ?? null },
+  }));
+}
+const { item, vorige, volgende } = Astro.props;
+const h = zoekHoofdstuk(item.hoofdstuk);
+const isMenu = item.soort === 'menu';
+const draaiboek = isMenu && typeof item.draaiboek === 'string' ? eetclub.find((e) => e.slug === item.draaiboek) : null;
+const intro = Array.isArray(item.intro) ? item.intro : [item.intro];
+const bySlug = Object.fromEntries(recepten.map((r) => [r.slug, r]));
+const harvest = (item.ingredienten ?? []).find((g) => g.titel === 'Uit de pluktuin');
+const beschrijving = intro[0] ?? '';
+
+const jsonld = !isMenu && {
+  '@context': 'https://schema.org',
+  '@type': 'Recipe',
+  name: naam(item),
+  description: item.intro,
+  image: new URL(`/fotos/${item.foto}-1600.webp`, Astro.site).href,
+  recipeYield: item.personen,
+  recipeCategory: item.tags?.[0],
+  recipeCuisine: item.tags?.[1],
+  recipeIngredient: item.ingredienten.flatMap((g) => g.items),
+  recipeInstructions: item.bereiding.map((s) => ({ '@type': 'HowToStep', text: s })),
+  inLanguage: 'nl',
+};
+---
+<Base titel={naam(item)} beschrijving={beschrijving} hoofdstuk={item.hoofdstuk} og={item.foto}>
+  {jsonld && <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonld)} />}
+  <article class="recept wrap">
+    <div class="recept-foto">
+      <figure><Foto id={item.foto} alt={`Foto: ${naam(item)}`} eager sizes="(max-width: 900px) 100vw, 42vw" /></figure>
+    </div>
+
+    <div class="recept-tekst">
+      <p class="kapitaal labels">
+        <a href={`/${h.slug}/`}>{h.titel}</a>{(isMenu ? ['Menu'] : item.tags).map((t) => <><span class="punt">·</span>{t}</>)}
+      </p>
+      <h1>{item.titel}</h1>
+      {item.ondertitel && <p class="ondertitel">{item.ondertitel}</p>}
+      <ul class="pillen">
+        {item.personen && <li>{item.personen}</li>}
+        {(item.meta ?? []).map((m) => <li>{m}</li>)}
+      </ul>
+      <div class="intro">{intro.map((p) => <p>{p}</p>)}</div>
+
+      {item.gangen && (
+        <section class="menukaart" aria-label="Menu">
+          {item.gangen.map((g) => (
+            <div class="gang">
+              <span class="kapitaal">{g.titel}</span>
+              {g.noot && <span class="noot">{g.noot}</span>}
+              {g.gerechten.map((ger) => (
+                <p>{ger.slug && bySlug[ger.slug] ? <a href={url(bySlug[ger.slug])}>{ger.naam}</a> : ger.naam}</p>
+              ))}
+            </div>
+          ))}
+        </section>
+      )}
+
+      {item.ingredienten && (
+        <div class:list={['kolommen', { breed: isMenu }]}>
+          <aside class="ingredienten">
+            <h2 class="kapitaal">Ingrediënten</h2>
+            {item.ingredienten.map((g) => (
+              <div class:list={['groep', { oogst: g.titel === 'Uit de pluktuin' }]}>
+                {g.titel && <h3>{g.titel}</h3>}
+                <ul>{g.items.map((i) => <li>{i}</li>)}</ul>
+              </div>
+            ))}
+          </aside>
+          {item.bereiding && (
+            <section class="bereiding">
+              <h2 class="kapitaal">Bereiding</h2>
+              <ol>{item.bereiding.map((s) => <li>{s}</li>)}</ol>
+              {item.serveertip && <p class="serveertip">{item.serveertip}</p>}
+              {item.tip && <div class="tip"><span>Tip</span><p>{item.tip}</p></div>}
+            </section>
+          )}
+        </div>
+      )}
+
+      {item.dessert && (
+        <div class="kolommen">
+          <aside class="ingredienten">
+            <h2 class="kapitaal">{item.dessert.titel}</h2>
+            <div class="groep"><ul>{item.dessert.items.map((i) => <li>{i}</li>)}</ul></div>
+            <p class="serveertip">{item.dessert.bereiding}</p>
+          </aside>
+          <section class="bereiding tijdlijn">
+            <h2 class="kapitaal">Draaiboek</h2>
+            {item.draaiboek.map((f) => (
+              <div class="fase">
+                <h3>{f.titel}</h3>
+                <ul>{f.taken.map((t) => <li>{t}</li>)}</ul>
+              </div>
+            ))}
+          </section>
+        </div>
+      )}
+
+      {draaiboek && (
+        <section class="draaiboek" id="draaiboek">
+          <figure class="draaiboek-foto"><Foto id={draaiboek.foto} alt="" sizes="(max-width: 900px) 100vw, 40vw" /></figure>
+          <span class="hs-nr">Draaiboek</span>
+          <p class="ondertitel">{draaiboek.ondertitel}</p>
+          {(() => {
+            let n = 0;
+            return draaiboek.fasen.map((f) => (
+              <div class="fase">
+                <h3 class="kapitaal">{f.titel}</h3>
+                <ol start={n + 1} style={`--start:${n}`}>{f.stappen.map((s) => { n++; return <li>{s}</li>; })}</ol>
+              </div>
+            ));
+          })()}
+          {draaiboek.tip && <div class="tip"><span>Tip</span><p>{draaiboek.tip}</p></div>}
+        </section>
+      )}
+
+      <p class="geen-print acties">
+        <button class="knop" type="button" onclick="window.print()">Print dit recept</button>
+        {harvest && <span class="oogst-noot">Groen gemarkeerd: wat je uit de pluktuin haalt</span>}
+      </p>
+    </div>
+  </article>
+
+  <nav class="buren wrap" aria-label="Vorige en volgende">
+    {vorige ? <a href={url(vorige)} class="vorige"><span class="kapitaal">Vorige</span>{vorige.titel}</a> : <span />}
+    {volgende ? <a href={url(volgende)} class="volgende"><span class="kapitaal">Volgende</span>{volgende.titel}</a> : <span />}
+  </nav>
+</Base>
+
+<style>
+  .recept { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 64px); padding-top: 40px; align-items: start; }
+  .recept-foto figure { margin: 0; position: sticky; top: 24px; border-radius: 4px; overflow: hidden; background: var(--papier-2); }
+  .recept-foto :global(img) { width: 100%; height: auto; }
+  .recept-tekst { container-type: inline-size; min-width: 0; }
+  .labels a { text-decoration: none; }
+  h1 { font-size: clamp(36px, 5vw, 54px); margin: 14px 0 6px; }
+  .ondertitel { font-family: var(--display); font-style: italic; font-size: clamp(20px, 2.4vw, 25px); color: var(--gedempt); margin: 0; line-height: 1.3; }
+  .intro { margin: 22px 0 0; padding-bottom: 28px; border-bottom: 1px solid var(--lijn); font-style: italic; color: var(--inkt-2); font-size: 18px; }
+  .intro p:last-child { margin-bottom: 0; }
+
+  .kolommen { display: grid; grid-template-columns: 1fr; gap: 28px; margin-top: 28px; }
+  @container (min-width: 540px) { .kolommen { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); } .kolommen.breed { grid-template-columns: 1fr 1fr; } }
+  .ingredienten { background: var(--kleur-licht); border-radius: 6px; padding: 22px 22px 14px; align-self: start; }
+  .kolommen.breed .ingredienten { grid-column: 1 / -1; columns: 2 260px; column-gap: 32px; }
+  .kolommen.breed .ingredienten .groep { break-inside: avoid; }
+  .ingredienten h2, .bereiding h2 { margin: 0 0 14px; font-size: 11px; }
+  .groep h3 { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 16px; margin: 16px 0 6px; }
+  .groep:first-of-type h3 { margin-top: 0; }
+  .groep ul { list-style: none; margin: 0 0 8px; padding: 0; }
+  .groep li { position: relative; padding-left: 16px; margin: 0 0 7px; font-size: 15.5px; line-height: 1.45; }
+  .groep li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 6px; height: 6px; border-radius: 1px; background: var(--kleur); }
+  .groep.oogst { background: color-mix(in srgb, #5f8f45 12%, #fff); margin: 0 -10px 10px; padding: 10px 10px 4px; border-radius: 4px; }
+  .groep.oogst h3 { color: #3f6b2c; }
+  .groep.oogst li::before { background: #5f8f45; }
+
+  .bereiding ol { list-style: none; counter-reset: stap var(--start, 0); margin: 0; padding: 0; }
+  .bereiding ol li, .draaiboek ol li { counter-increment: stap; position: relative; padding-left: 38px; margin: 0 0 16px; }
+  .bereiding ol li::before, .draaiboek ol li::before { content: counter(stap); position: absolute; left: 0; top: -3px; font-family: var(--display); font-size: 24px; color: var(--kleur); line-height: 1.2; }
+  .serveertip { font-style: italic; color: var(--inkt-2); }
+  .tip { margin-top: 20px; background: var(--kleur-licht); border-left: 4px solid var(--kleur); border-radius: 0 6px 6px 0; padding: 12px 18px 4px; }
+  .tip span { font-family: var(--hand); font-size: 28px; color: var(--kleur); line-height: 1; }
+  .tip p { margin: 6px 0 10px; }
+
+  .menukaart { margin: 28px 0 0; border: 1px solid var(--kleur); outline: 6px solid var(--kleur-licht); border-radius: 6px; padding: 18px 24px; text-align: center; background: #fff8; }
+  .gang + .gang { margin-top: 14px; }
+  .gang p { font-family: var(--display); font-style: italic; font-size: 19px; margin: 4px 0; line-height: 1.35; }
+  .gang a { text-decoration-color: var(--kleur-zacht); text-underline-offset: 3px; }
+  .noot { display: block; font-family: var(--hand); font-size: 20px; color: var(--gedempt); }
+  .tijdlijn .fase h3, .draaiboek .fase h3 { font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--kleur); margin: 18px 0 6px; }
+  .tijdlijn .fase:first-of-type h3 { margin-top: 0; }
+  .tijdlijn ul { margin: 0; padding-left: 18px; }
+  .tijdlijn li { margin-bottom: 4px; }
+  .draaiboek { margin-top: 56px; border-top: 1px solid var(--lijn); padding-top: 32px; }
+  .draaiboek .hs-nr { font-family: var(--display); font-size: 40px; }
+  .draaiboek-foto { float: right; width: 38%; margin: 0 0 16px 24px; border-radius: 4px; overflow: hidden; }
+  .draaiboek ol { list-style: none; padding: 0; margin: 0; counter-reset: stap var(--start, 0); }
+  .draaiboek .ondertitel { margin-bottom: 8px; }
+  @container (max-width: 520px) { .draaiboek-foto { float: none; width: 100%; margin: 0 0 16px; } }
+
+  .acties { margin-top: 36px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .oogst-noot { font-size: 14px; color: var(--gedempt); font-style: italic; }
+
+  .buren { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 64px; border-top: 1px solid var(--lijn); padding-top: 24px; }
+  .buren a { text-decoration: none; font-family: var(--display); font-size: 20px; line-height: 1.3; }
+  .buren .kapitaal { display: block; color: var(--gedempt); margin-bottom: 4px; font-size: 10px; }
+  .buren .volgende { text-align: right; }
+  .buren a:hover { color: var(--kleur); }
+
+  @media (max-width: 900px) {
+    .recept { grid-template-columns: 1fr; padding-top: 0; }
+    .recept-foto { margin: 0 calc(var(--gutter) * -1); }
+    .recept-foto figure { position: static; border-radius: 0; aspect-ratio: 4 / 3.4; }
+    .recept-foto :global(img) { height: 100%; object-fit: cover; }
+  }
+  @media print {
+    .recept { display: block; padding: 0; }
+    .recept-foto { float: right; width: 32%; margin: 0 0 12px 20px; }
+    .recept-foto figure { position: static; }
+    h1 { font-size: 26pt; }
+    .kolommen { grid-template-columns: 0.8fr 1.2fr !important; gap: 18px; }
+    .ingredienten, .tip { background: none; border: 1px solid #ccc; }
+    .draaiboek-foto { display: none; }
+  }
+</style>

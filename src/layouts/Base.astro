@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import { hoofdstukken } from '../lib/data.js';
+
+interface Props {
+  titel?: string;
+  beschrijving?: string;
+  hoofdstuk?: string;
+  og?: string;
+}
+const { titel, beschrijving = 'Seizoenskookboek met recepten van de wekelijkse oogst van pluktuin De Gagelgaard.', hoofdstuk, og = 'p001' } = Astro.props;
+const volledigeTitel = titel ? `${titel} · Uit de pluktuin` : 'Uit de pluktuin · Seizoenskookboek 2026';
+const ogUrl = new URL(`/og/${og}.jpg`, Astro.site).href;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const pad = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{volledigeTitel}</title>
+    <meta name="description" content={beschrijving} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#faf6f0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nl_NL" />
+    <meta property="og:site_name" content="Uit de pluktuin" />
+    <meta property="og:title" content={titel ?? 'Uit de pluktuin'} />
+    <meta property="og:description" content={beschrijving} />
+    <meta property="og:image" content={ogUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <slot name="head" />
+  </head>
+  <body data-hoofdstuk={hoofdstuk}>
+    <div class="band"></div>
+    <header class="kop">
+      <div class="wrap">
+        <a class="merk" href="/">Uit de <em>pluktuin</em></a>
+        <nav class="nav" aria-label="Hoofdstukken">
+          {hoofdstukken.map((h) => (
+            <a href={`/${h.slug}/`} aria-current={pad.startsWith(`/${h.slug}/`) ? 'page' : undefined} style={`--nav-kleur:${h.kleur}`}>
+              {h.slug === 'zoet' ? 'Zoet' : h.titel}
+            </a>
+          ))}
+        </nav>
+        <form class="zoek-kort" action="/zoeken/" method="get" role="search">
+          <label class="visually-hidden" for="zoek-kort">Zoek een recept</label>
+          <input id="zoek-kort" name="q" type="search" placeholder="Zoek, bijv. palmkool" autocomplete="off" />
+        </form>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="voet">
+      <div class="wrap">
+        <span>UIT DE PLUKTUIN · SEIZOENSKOOKBOEK 2026</span>
+        <span>Recepten met de wekelijkse oogst van De Gagelgaard · <a href="/inhoud/">Inhoud</a> · <a href="/voorwoord/">Voorwoord</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

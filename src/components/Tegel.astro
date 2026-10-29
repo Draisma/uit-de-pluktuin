@@ -1,0 +1,14 @@
+---
+import Foto from './Foto.astro';
+import { url } from '../lib/data.js';
+const { item, ...rest } = Astro.props;
+const label = item.soort === 'menu' ? 'Menu' : (item.tags?.[0] ?? '');
+---
+<li class="tegel" data-hoofdstuk={item.hoofdstuk} {...rest}>
+  <a href={url(item)}>
+    <figure><Foto id={item.foto} alt="" sizes="(max-width: 560px) 100vw, (max-width: 1000px) 50vw, 280px" /></figure>
+    <span class="kapitaal">{label}{item.tags?.[1] && <><span class="punt">·</span>{item.tags[1]}</>}</span>
+    <h3>{item.titel}</h3>
+    {item.ondertitel && <p>{item.ondertitel}</p>}
+  </a>
+</li>

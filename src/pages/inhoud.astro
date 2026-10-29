@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import { hoofdstukken, inhoud, url } from '../lib/data.js';
+---
+<Base titel="Inhoud" beschrijving="Alle recepten uit Uit de pluktuin, per seizoen.">
+  <div class="wrap">
+    <h1>Inhoud</h1>
+    <div class="lijst">
+      {hoofdstukken.map((h) => (
+        <section data-hoofdstuk={h.slug}>
+          <h2><a href={`/${h.slug}/`}><span class="kapitaal">Hoofdstuk {h.nummer}</span>{h.titel}</a></h2>
+          <ol>
+            {inhoud(h.slug).map((r) => (
+              <li><a href={url(r)}><span>{r.titel}{r.ondertitel && <em> {r.ondertitel}</em>}</span><span class="pg">{r.pagina}</span></a></li>
+            ))}
+          </ol>
+        </section>
+      ))}
+    </div>
+  </div>
+</Base>
+<style>
+  h1 { font-size: clamp(44px, 7vw, 72px); margin: 48px 0 32px; }
+  .lijst { columns: 2 420px; column-gap: 64px; }
+  section { break-inside: avoid-column; margin-bottom: 40px; }
+  h2 a { text-decoration: none; font-size: 32px; display: block; border-bottom: 3px solid var(--kleur); padding-bottom: 8px; }
+  h2 .kapitaal { display: block; font-size: 10px; margin-bottom: 4px; }
+  ol { list-style: none; padding: 0; margin: 10px 0 0; }
+  li a { display: flex; justify-content: space-between; gap: 16px; text-decoration: none; padding: 7px 0; border-bottom: 1px dotted var(--lijn); font-size: 16px; line-height: 1.4; }
+  li a:hover { color: var(--kleur); }
+  li em { color: var(--gedempt); }
+  .pg { font-family: var(--sans); font-size: 12px; color: var(--stil); padding-top: 3px; }
+</style>
