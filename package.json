@@ -1,0 +1,18 @@
+{
+  "name": "uit-de-pluktuin",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/lora": "5.3.0",
+    "@fontsource/playfair-display": "5.3.0",
+    "astro": "5.18.2"
+  }
+}

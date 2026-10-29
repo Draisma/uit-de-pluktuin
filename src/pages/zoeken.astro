@@ -1,0 +1,100 @@
+---
+import Base from '../layouts/Base.astro';
+import Tegel from '../components/Tegel.astro';
+import { hoofdstukken, volgorde } from '../lib/data.js';
+
+const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const items = volgorde.map((r) => {
+  const ingr = (r.ingredienten ?? []).flatMap((g) => g.items).join(' ');
+  const oogst = (r.ingredienten ?? []).filter((g) => g.titel === 'Uit de pluktuin').flatMap((g) => g.items).join(' ');
+  return {
+    r,
+    tekst: norm([r.titel, r.ondertitel, ...(r.tags ?? []), ingr, oogst].join(' ')),
+    titel: norm(`${r.titel} ${r.ondertitel ?? ''}`),
+  };
+});
+const soorten = ['Hoofdgerecht', 'Salade', 'Soep', 'Bijgerecht', 'Voorgerecht', 'Dessert', 'Vegetarisch'];
+---
+<Base titel="Zoeken" beschrijving="Zoek een recept op groente, keuken of gerecht.">
+  <div class="wrap">
+    <h1>Zoek een recept</h1>
+    <form class="zoekbalk" role="search" action="/zoeken/" method="get">
+      <label class="visually-hidden" for="q">Zoekterm</label>
+      <input id="q" name="q" type="search" placeholder="Groente, gerecht of keuken, bijv. pompoen of Italiaans" autocomplete="off" />
+    </form>
+    <div class="filters" role="group" aria-label="Filter">
+      <button type="button" data-filter="" aria-pressed="true">Alles</button>
+      {hoofdstukken.map((h) => <button type="button" data-filter={`h:${h.slug}`} aria-pressed="false" style={`--kleur:${h.kleur}`}>{h.slug === 'zoet' ? 'Zoet' : h.titel}</button>)}
+      <span class="scheiding" aria-hidden="true"></span>
+      {soorten.map((s) => <button type="button" data-filter={`t:${s.toLowerCase()}`} aria-pressed="false">{s}</button>)}
+    </div>
+    <p class="aantal" aria-live="polite"><span id="aantal">{items.length}</span> recepten</p>
+    <ul class="tegels" id="resultaten">
+      {items.map(({ r, tekst, titel }) => (
+        <Tegel item={r} data-tekst={tekst} data-titel={titel} data-h={r.hoofdstuk} data-t={[...(r.tags ?? []), ...(r.meta ?? [])].join('|').toLowerCase()} />
+      ))}
+    </ul>
+    <p class="leeg" id="leeg" hidden>Niets gevonden. Probeer een andere groente of een keuken, zoals “Frans”.</p>
+  </div>
+</Base>
+
+<script>
+  const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+  const input = document.getElementById('q') as HTMLInputElement;
+  const items = [...document.querySelectorAll<HTMLElement>('#resultaten .tegel')];
+  const knoppen = [...document.querySelectorAll<HTMLButtonElement>('.filters button')];
+  const aantal = document.getElementById('aantal')!;
+  const leeg = document.getElementById('leeg')!;
+  let filter = '';
+
+  const params = new URLSearchParams(location.search);
+  input.value = params.get('q') ?? '';
+  const kort = document.getElementById('zoek-kort') as HTMLInputElement | null;
+  if (kort) kort.value = input.value;
+
+  function toepassen() {
+    const woorden = norm(input.value).split(/\s+/).filter(Boolean);
+    let n = 0;
+    const zichtbaar: HTMLElement[] = [];
+    for (const el of items) {
+      const tekst = el.dataset.tekst!;
+      let ok = woorden.every((w) => tekst.includes(w));
+      if (ok && filter.startsWith('h:')) ok = el.dataset.h === filter.slice(2);
+      if (ok && filter.startsWith('t:')) ok = el.dataset.t!.includes(filter.slice(2));
+      el.hidden = !ok;
+      if (ok) { n++; zichtbaar.push(el); }
+    }
+    // titeltreffers eerst
+    if (woorden.length) {
+      const lijst = document.getElementById('resultaten')!;
+      const score = (el: HTMLElement) => (woorden.some((w) => el.dataset.titel!.includes(w)) ? 0 : 1);
+      [...items].sort((a, b) => score(a) - score(b)).forEach((el) => lijst.appendChild(el));
+    }
+    aantal.textContent = String(n);
+    leeg.hidden = n > 0;
+    const url = new URL(location.href);
+    if (input.value) url.searchParams.set('q', input.value); else url.searchParams.delete('q');
+    history.replaceState(null, '', url);
+  }
+  input.addEventListener('input', toepassen);
+  input.form!.addEventListener('submit', (e) => { e.preventDefault(); toepassen(); });
+  knoppen.forEach((b) => b.addEventListener('click', () => {
+    filter = b.dataset.filter!;
+    knoppen.forEach((k) => k.setAttribute('aria-pressed', String(k === b)));
+    toepassen();
+  }));
+  toepassen();
+  if (!input.value) input.focus({ preventScroll: true });
+</script>
+
+<style>
+  h1 { font-size: clamp(38px, 6vw, 60px); margin: 48px 0 24px; }
+  .zoekbalk input { width: 100%; font: 20px var(--serif); padding: 14px 20px; border: 1px solid var(--lijn); border-radius: 999px; background: #fff; color: var(--inkt); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; align-items: center; }
+  .filters button { font-family: var(--sans); font-size: 13px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--lijn); background: transparent; color: var(--inkt); cursor: pointer; }
+  .filters button[aria-pressed='true'] { background: var(--inkt); color: var(--papier); border-color: var(--inkt); }
+  .filters button[data-filter^='h:'][aria-pressed='true'] { background: var(--kleur); border-color: var(--kleur); }
+  .scheiding { width: 1px; height: 20px; background: var(--lijn); margin: 0 6px; }
+  .aantal { font-family: var(--sans); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gedempt); margin: 18px 0 24px; }
+  .leeg { font-style: italic; color: var(--gedempt); }
+</style>
