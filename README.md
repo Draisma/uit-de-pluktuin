@@ -23,6 +23,7 @@ npm run build    # bouwt naar dist/
 | `public/og/` | Deelplaatjes 1200×630 voor WhatsApp en sociale media |
 | `scripts/extract.py` | Haalt de recepten uit de kookboek-pdf (`python3 extract.py` naast `boek.pdf`) |
 | `scripts/fotos.py` | Zet de originele foto's om naar webformaten |
+| `public/kookboek.pdf` | Het boek als download, foto's verkleind tot 960 px zodat hij onder de 25 MiB-limiet van Cloudflare blijft (`scripts/pdf-web.py 960 72`) |
 
 Een recept aanpassen? Bewerk `src/data/recepten.json` en push: Cloudflare bouwt de site dan automatisch opnieuw.
 
