@@ -32,3 +32,4 @@ Een recept aanpassen? Bewerk `src/data/recepten.json` en push: Cloudflare Pages 
 - Build command: `npm run build`
 - Output directory: `dist`
 - Node-versie: via `.node-version` (22)
+- Domein: https://kookboek.fldr.nl (custom domain in Pages)
