@@ -116,3 +116,4 @@ h3:empty { display: none; }
 .cover .dot, .backcard .dot { color: #a4462c; }
 .back .backcard { position: absolute; left: 40mm; right: 40mm; bottom: 40mm; padding: 9mm; text-align: center; background: rgba(251, 247, 239, .95); border-radius: 2mm; }
 .backcard p { font-family: 'Playfair'; font-style: italic; font-size: 12pt; line-height: 1.45; margin: 4mm 0 0; color: #3e352e; }
+.backcard .colofon { font-family: 'Inter', sans-serif; font-size: 6.5pt; line-height: 1.6; letter-spacing: .04em; color: #7a6e63; margin-top: 5mm; }
