@@ -1,0 +1,76 @@
+---
+// Klik op een foto met data-vergroot: de foto opent groot in een pop-up.
+// Sluiten met Esc, de sluitknop of een klik buiten de foto.
+---
+<dialog class="vergroot-dialoog" aria-label="Vergrote foto">
+  <button class="vergroot-sluit" type="button" aria-label="Sluiten">×</button>
+  <figure>
+    <img alt="" />
+    <figcaption></figcaption>
+  </figure>
+</dialog>
+
+<script>
+  const dlg = document.querySelector<HTMLDialogElement>('.vergroot-dialoog');
+  const fotos = document.querySelectorAll<HTMLImageElement>('img[data-vergroot]');
+  if (dlg && fotos.length) {
+    const groot = dlg.querySelector('img')!;
+    const tekst = dlg.querySelector('figcaption')!;
+    let terug: HTMLElement | null = null;
+
+    const open = (img: HTMLImageElement) => {
+      terug = img;
+      groot.src = img.currentSrc || img.src; // meteen iets laten zien
+      groot.alt = img.alt;
+      const hoog = new Image();
+      hoog.onload = () => { if (dlg.open) groot.src = hoog.src; };
+      hoog.src = img.dataset.vergroot!;
+      tekst.textContent = img.dataset.bijschrift || '';
+      tekst.hidden = !tekst.textContent;
+      dlg.showModal();
+      document.documentElement.classList.add('vergroot-open');
+    };
+
+    fotos.forEach((img) => {
+      img.tabIndex = 0;
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Foto vergroten' + (img.alt ? ': ' + img.alt.replace(/^Foto: /, '') : ''));
+      img.addEventListener('click', () => open(img));
+      img.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); }
+      });
+    });
+
+    dlg.addEventListener('click', () => dlg.close()); // klik waar dan ook (ook op de foto) sluit
+    dlg.addEventListener('close', () => {
+      document.documentElement.classList.remove('vergroot-open');
+      groot.removeAttribute('src');
+      terug?.focus();
+    });
+  }
+</script>
+
+<style is:global>
+  img[data-vergroot] { cursor: zoom-in; }
+  img[data-vergroot]:focus-visible { outline: 3px solid var(--kleur); outline-offset: 3px; }
+  html.vergroot-open { overflow: hidden; }
+  .vergroot-dialoog {
+    border: 0; padding: 0; margin: 0; max-width: none; max-height: none;
+    width: 100vw; height: 100dvh; background: transparent; cursor: zoom-out;
+    display: none; align-items: center; justify-content: center;
+  }
+  .vergroot-dialoog[open] { display: flex; }
+  .vergroot-dialoog::backdrop { background: rgba(28, 24, 20, 0.92); backdrop-filter: blur(3px); }
+  .vergroot-dialoog figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px; max-height: 100%; }
+  .vergroot-dialoog img {
+    max-width: min(100%, 1200px); max-height: calc(100dvh - 80px); width: auto; height: auto;
+    border-radius: 4px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45); object-fit: contain;
+  }
+  .vergroot-dialoog figcaption { color: #f3ece2; font: italic 15px/1.4 var(--serif); text-align: center; max-width: 60ch; }
+  .vergroot-sluit {
+    position: fixed; top: 12px; right: 14px; width: 44px; height: 44px; border-radius: 50%;
+    border: 0; background: rgba(250, 246, 240, 0.14); color: #faf6f0; font: 30px/1 var(--sans); cursor: pointer;
+  }
+  .vergroot-sluit:hover, .vergroot-sluit:focus-visible { background: rgba(250, 246, 240, 0.28); outline: none; }
+  @media print { .vergroot-dialoog { display: none !important; } }
+</style>

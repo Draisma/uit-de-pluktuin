@@ -1,7 +1,7 @@
 ---
 import { foto, srcset } from '../lib/data.js';
-interface Props { id: string; alt?: string; sizes?: string; eager?: boolean; class?: string }
-const { id, alt = '', sizes = '(max-width: 760px) 100vw, 50vw', eager = false, class: cls } = Astro.props;
+interface Props { id: string; alt?: string; sizes?: string; eager?: boolean; class?: string; vergroot?: boolean; bijschrift?: string }
+const { id, alt = '', sizes = '(max-width: 760px) 100vw, 50vw', eager = false, class: cls, vergroot = false, bijschrift } = Astro.props;
 ---
 <img
   class={cls}
@@ -14,4 +14,6 @@ const { id, alt = '', sizes = '(max-width: 760px) 100vw, 50vw', eager = false, c
   loading={eager ? 'eager' : 'lazy'}
   fetchpriority={eager ? 'high' : undefined}
   decoding="async"
+  data-vergroot={vergroot ? foto(id, 1600) : undefined}
+  data-bijschrift={vergroot ? (bijschrift ?? alt) : undefined}
 />
