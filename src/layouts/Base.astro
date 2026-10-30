@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Vergroot from '../components/Vergroot.astro';
 import { hoofdstukken } from '../lib/data.js';
 
 interface Props {
@@ -62,5 +63,6 @@ const pad = Astro.url.pathname;
         <span>Recepten met de wekelijkse oogst van De Gagelgaard · <a href="/inhoud/">Inhoud</a> · <a href="/voorwoord/">Voorwoord</a> · <a href="/kookboek.pdf" download="Uit de pluktuin 2026.pdf" style="white-space:nowrap">Download als pdf</a></span>
       </div>
     </footer>
+    <Vergroot />
   </body>
 </html>

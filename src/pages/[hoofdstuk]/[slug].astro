@@ -36,7 +36,7 @@ const jsonld = !isMenu && {
   {jsonld && <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonld)} />}
   <article class="recept wrap">
     <div class="recept-foto">
-      <figure><Foto id={item.foto} alt={`Foto: ${naam(item)}`} eager sizes="(max-width: 900px) 100vw, 42vw" /></figure>
+      <figure><Foto id={item.foto} alt={`Foto: ${naam(item)}`} bijschrift={naam(item)} eager vergroot sizes="(max-width: 900px) 100vw, 42vw" /></figure>
     </div>
 
     <div class="recept-tekst">
@@ -108,7 +108,7 @@ const jsonld = !isMenu && {
 
       {draaiboek && (
         <section class="draaiboek" id="draaiboek">
-          <figure class="draaiboek-foto"><Foto id={draaiboek.foto} alt="" sizes="(max-width: 900px) 100vw, 40vw" /></figure>
+          <figure class="draaiboek-foto"><Foto id={draaiboek.foto} alt="" bijschrift="Draaiboek" vergroot sizes="(max-width: 900px) 100vw, 40vw" /></figure>
           <span class="hs-nr">Draaiboek</span>
           <p class="ondertitel">{draaiboek.ondertitel}</p>
           {(() => {
