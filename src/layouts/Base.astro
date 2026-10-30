@@ -8,7 +8,7 @@ interface Props {
   hoofdstuk?: string;
   og?: string;
 }
-const { titel, beschrijving = 'Seizoenskookboek met recepten van de wekelijkse oogst van pluktuin De Gagelgaard.', hoofdstuk, og = 'p001' } = Astro.props;
+const { titel, beschrijving = 'Seizoenskookboek met recepten van de wekelijkse oogst van pluktuin De Gagelgaard.', hoofdstuk, og = 'omslag' } = Astro.props;
 const volledigeTitel = titel ? `${titel} · Uit de pluktuin` : 'Uit de pluktuin · Seizoenskookboek 2026';
 const ogUrl = new URL(`/og/${og}.jpg`, Astro.site).href;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;

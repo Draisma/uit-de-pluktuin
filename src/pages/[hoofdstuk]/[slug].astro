@@ -22,7 +22,7 @@ const jsonld = !isMenu && {
   '@context': 'https://schema.org',
   '@type': 'Recipe',
   name: naam(item),
-  description: item.intro,
+  description: intro.join(' '),
   image: new URL(`/fotos/${item.foto}-1600.webp`, Astro.site).href,
   recipeYield: item.personen,
   recipeCategory: item.tags?.[0],
@@ -80,7 +80,7 @@ const jsonld = !isMenu && {
             <section class="bereiding">
               <h2 class="kapitaal">Bereiding</h2>
               <ol>{item.bereiding.map((s) => <li>{s}</li>)}</ol>
-              {item.serveertip && <p class="serveertip">{item.serveertip}</p>}
+              {[].concat(item.serveertip ?? []).map((p) => <p class="serveertip">{p}</p>)}
               {item.tip && <div class="tip"><span>Tip</span><p>{item.tip}</p></div>}
             </section>
           )}
