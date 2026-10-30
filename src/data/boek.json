@@ -2,11 +2,11 @@
   "titel": "Uit de pluktuin",
   "bovenkop": "Seizoenskookboek 2026",
   "ondertitel": "Recepten met de wekelijkse oogst van De Gagelgaard",
-  "achterflap": "91 recepten met de oogst van De Gagelgaard, van raapsteel in mei tot pompoen in oktober.",
-  "fotos": {"omslag": "p001", "schutblad": "p002", "voorwoord": "p002", "inhoud": "p004", "achterkant": "p202"},
+  "achterflap": "105 recepten met de oogst van De Gagelgaard, van raapsteel in mei tot pompoen in oktober.",
+  "fotos": {"omslag": "omslag", "schutblad": "schutblad", "voorwoord": "schutblad", "inhoud": "inhoud", "achterkant": "achterkant"},
   "voorwoord": {
     "titel": "Groente in de hoofdrol",
-    "foto": "p002",
+    "foto": "schutblad",
     "lead": "Elke donderdag rond kwart over tien kwam de oogstbrief binnen: wat er die week te plukken viel, in welk teeltvak, en hoeveel. Daaruit groeiden de recepten in dit boek.",
     "alineas": [
       "Het uitgangspunt was steeds hetzelfde. De groente uit de pluktuin is het gerecht, vlees of vis is de smaakmaker: meestal zo'n 100 gram per persoon, soms minder, soms helemaal niet. De keukens wisselen van week tot week, van een Belgische stoemp en een Hongaarse goulash tot een Sri Lankaanse curry en Japanse okonomiyaki, zodat dezelfde palmkool of courgette nooit twee keer op dezelfde manier op tafel kwam.",
@@ -22,15 +22,15 @@
     "slot": "Eet smakelijk!"
   },
   "hoofdstukken": [
-    {"slug": "lente", "nummer": 1, "titel": "Lente", "periode": "mei en juni", "foto": "p006", "kleur": "#5f8f45",
+    {"slug": "lente", "nummer": 1, "titel": "Lente", "periode": "mei en juni", "foto": "hoofdstuk-lente", "kleur": "#5f8f45",
      "intro": "Het seizoen begint met blad en knol: raapsteel, meiraap, radijs, spinazie en de eerste kropsla. Daarna komen doperwten, tuinbonen, peultjes en koolrabi. Snelle gerechten met veel groen, en bijna altijd een handvol munt, dille of bieslook erdoor."},
-    {"slug": "zomer", "nummer": 2, "titel": "Zomer", "periode": "eind juni tot eind augustus", "foto": "p056", "kleur": "#cf7a26",
+    {"slug": "zomer", "nummer": 2, "titel": "Zomer", "periode": "eind juni tot eind augustus", "foto": "hoofdstuk-zomer", "kleur": "#cf7a26",
      "intro": "De tuin geeft meer dan je op kunt: courgette, bonen in alle soorten, bieten, tomaten, spitskool en knolvenkel. Dit zijn de hoofdgerechten uit de drukste maanden, van ovenschotel tot curry en van taco tot tajine. Groente in de hoofdrol, vlees of vis als smaakmaker."},
-    {"slug": "herfst", "nummer": 3, "titel": "Herfst", "periode": "september en oktober", "foto": "p132", "kleur": "#a4462c",
+    {"slug": "herfst", "nummer": 3, "titel": "Herfst", "periode": "september en oktober", "foto": "hoofdstuk-herfst", "kleur": "#a4462c",
      "intro": "Pompoen, palmkool, andijvie, pastinaak en knolvenkel nemen het over. Stoofpotten, traybakes en ovenschotels die de keuken verwarmen, met af en toe nog een frisse salade van veldsla en winterpostelein of een bord stoemp met groenlof."},
-    {"slug": "zoet", "nummer": 4, "titel": "Zoet & drinken", "periode": "rabarber en aardbeien", "foto": "p178", "kleur": "#bf4a68",
+    {"slug": "zoet", "nummer": 4, "titel": "Zoet & drinken", "periode": "rabarber en aardbeien", "foto": "hoofdstuk-zoet", "kleur": "#bf4a68",
      "intro": "Wat er overbleef van de rabarber en de aardbeien: een siroop voor limonade (of een gin-tonic), een compote voor bij de yoghurt en een crumble voor het weekend."},
-    {"slug": "eetclub", "nummer": 5, "titel": "Eetclub", "periode": "Het Gestoofde Peertje", "foto": "p186", "kleur": "#2f5a45",
+    {"slug": "eetclub", "nummer": 5, "titel": "Eetclub", "periode": "Het Gestoofde Peertje", "foto": "hoofdstuk-eetclub", "kleur": "#2f5a45",
      "intro": "Twee avonden voor de eetclub: een zomerse gedeelde tafel voor vijf en een herfstdiner voor zes. Allebei met een draaiboek, zodat de kok niet de hele avond in de keuken staat en gewoon mee aan tafel zit."}
   ]
 }
