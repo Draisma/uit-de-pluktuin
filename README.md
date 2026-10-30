@@ -37,3 +37,13 @@ De site draait als Cloudflare Worker met statische assets (zie `wrangler.jsonc`)
 - Worker-naam: `uit-de-pluktuin` (moet gelijk zijn aan `name` in `wrangler.jsonc`)
 - Node-versie: via `.node-version` (22)
 - Domein: https://kookboek.fldr.nl
+
+## Licentie
+
+| Wat | Licentie |
+| --- | --- |
+| Broncode: `src/` (behalve `src/data/`), `scripts/`, `boek/*.py`, `boek/*.sh`, `boek/boek.css` en configuratie | [MIT](LICENSE) |
+| Inhoud: recepten en teksten (`src/data/`), foto's (`public/fotos/`, `public/og/`) en het boek (`public/kookboek.pdf`) | [CC BY-NC-SA 4.0](LICENSE-CONTENT) |
+| Lettertypen in `boek/fonts/` (Lora, Playfair Display, Caveat) | [SIL Open Font License 1.1](boek/fonts/OFL.txt) |
+
+De inhoud mag je delen en bewerken, mits je de bron vermeldt (*Uit de pluktuin*, Florian Draisma, kookboek.fldr.nl), het niet commercieel gebruikt en bewerkingen onder dezelfde licentie deelt.
