@@ -264,7 +264,9 @@ def build(pages_in=None):
                 b.add('recipe', recipe_page(ch, r) + footer(b.n, ch), style)
     if b.n % 2 == 1:
         b.add('notes', '<div class="inner prose"><div class="kicker">Notities</div><h1 class="big">Notities</h1><div class="lines">' + '<div class="ln"></div>' * 26 + '</div></div>' + footer(b.n))
-    b.add('back', '<img src="%s"><div class="backcard"><div class="cv-k">Uit de pluktuin</div><p>%s</p></div>' % (b.src(fotos['achterkant']), E(BOEK['achterflap'])))
+    colofon = '<br>'.join(E(r) for r in BOEK.get('colofon', '').split('\n'))
+    b.add('back', '<img src="%s"><div class="backcard"><div class="cv-k">Uit de pluktuin</div><p>%s</p><div class="colofon">%s</div></div>'
+                  % (b.src(fotos['achterkant']), E(BOEK['achterflap']), colofon))
     return b, pages
 
 
