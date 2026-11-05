@@ -2832,6 +2832,51 @@
   "slug": "italiaanse-risotto"
  },
  {
+  "pagina": null,
+  "foto": "pasta-alla-norma",
+  "titel": "Pasta alla Norma",
+  "ondertitel": "met geroosterde aubergine, mozzarella en pijnboompitten",
+  "seizoen": "zomer",
+  "tags": [
+   "Hoofdgerecht",
+   "Italiaans"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [],
+  "intro": "Siciliaanse klassieker: aubergine uit de oven in een eenvoudige tomatensaus met knoflook en basilicum. Pecorino door de pasta, blokjes mozzarella en geroosterde pijnboompitten erover.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "2 aubergines (ca. 500 g), in blokken van ca. 3 cm",
+     "50 ml olijfolie",
+     "3 el tomatentapenade",
+     "1 tl Italiaanse kruiden",
+     "2 tenen knoflook, in plakjes",
+     "2 blikken tomatenblokjes (à 400 g)",
+     "1 bakje basilicum (15 g)",
+     "300 g penne",
+     "100 g pecorino romano, geraspt",
+     "1 bol buffelmozzarella, in blokjes",
+     "4 el pijnboompitten, geroosterd",
+     "peper, zout"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 220 °C. Schep de aubergineblokken om met de olijfolie (houd 2 el apart voor de saus) en de tapenade. Verdeel ze over een bakplaat met bakpapier en rooster ze in 20-25 minuten gaar en goudbruin; schep halverwege een keer om. Bestrooi met de Italiaanse kruiden.",
+   "Verhit intussen de achtergehouden 2 el olijfolie in een pan en bak de knoflook kort. Voeg de tomatenblokjes met hun vocht toe en laat ca. 10 minuten zonder deksel zachtjes pruttelen.",
+   "Kook ondertussen de pasta volgens de verpakking.",
+   "Roer de geroosterde aubergine door de saus en breng op smaak met peper en zout. Snijd de helft van het basilicum in reepjes en roer het erdoor.",
+   "Giet de pasta af, doe hem terug in de pan en schep de saus en de pecorino erdoor. Proef nog eens op peper en zout.",
+   "Verdeel over borden en garneer met de mozzarella, de rest van het basilicum en de pijnboompitten."
+  ],
+  "serveertip": null,
+  "tip": null,
+  "hoofdstuk": "zomer",
+  "slug": "pasta-alla-norma"
+ },
+ {
   "pagina": 135,
   "foto": "rodekool-ovenschotel",
   "titel": "Rodekool-ovenschotel",
