@@ -2877,7 +2877,48 @@
   "slug": "pasta-alla-norma"
  },
  {
-  "pagina": 137,
+  "pagina": 135,
+  "foto": "tomatensoep",
+  "titel": "Tomatensoep",
+  "ondertitel": "met verse basilicum",
+  "seizoen": "zomer",
+  "tags": [
+   "Soep",
+   "Italiaans"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [],
+  "intro": "Gladde soep van rijpe tomaten, sjalot en knoflook. De basilicumstelen gaan mee in de pan voor extra smaak, de blaadjes gaan er pas aan het eind door.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "4 sjalotten, in halve ringen",
+     "4 tenen knoflook, geperst",
+     "30 g verse basilicum",
+     "6 el extra vierge olijfolie",
+     "750 g rijpe tomaten, grof gesneden",
+     "2 groentebouillontabletten",
+     "750 ml water",
+     "eventueel peper en zout"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Pluk de blaadjes van de basilicum en snijd de stelen fijn. Verhit de helft van de olijfolie in een soeppan op middelhoog vuur en bak sjalot, knoflook en basilicumstelen ca. 4 minuten.",
+   "Voeg de tomaten toe en laat ze ca. 8 minuten meekoken; roer regelmatig.",
+   "Verkruimel de bouillontabletten boven de pan en voeg het water toe. Breng aan de kook en laat 10 minuten zachtjes koken.",
+   "Houd 4 blaadjes basilicum apart voor de garnering en scheur de rest grof.",
+   "Pureer de soep glad met de staafmixer. Proef eerst (de bouillon is al zout) en breng eventueel op smaak met peper en zout. Roer de gescheurde basilicum erdoor.",
+   "Schep de soep in kommen, leg op elke kom een basilicumblaadje en besprenkel met de rest van de olijfolie."
+  ],
+  "serveertip": "Lekker met geroosterd brood.",
+  "tip": null,
+  "hoofdstuk": "zomer",
+  "slug": "tomatensoep"
+ },
+ {
+  "pagina": 139,
   "foto": "rodekool-ovenschotel",
   "titel": "Rodekool-ovenschotel",
   "ondertitel": "met varkenshaas, biet en aardappel",
@@ -2922,7 +2963,7 @@
   "slug": "rodekool-ovenschotel"
  },
  {
-  "pagina": 139,
+  "pagina": 141,
   "foto": "chinese-roerbak",
   "titel": "Chinese roerbak",
   "ondertitel": "met wortel, peper, gehakt en knoflook-gembersaus",
@@ -2967,7 +3008,7 @@
   "slug": "chinese-roerbak"
  },
  {
-  "pagina": 141,
+  "pagina": 143,
   "foto": "caldo-verde",
   "titel": "Caldo Verde",
   "ondertitel": "Portugese kool-aardappelsoep met chorizo en prei",
@@ -3012,7 +3053,7 @@
   "slug": "caldo-verde"
  },
  {
-  "pagina": 143,
+  "pagina": 145,
   "foto": "warme-salade-van-knolvenkel-aardappel-en-sperziebonen",
   "titel": "Warme salade van knolvenkel, aardappel en sperziebonen",
   "ondertitel": "met feta",
@@ -3066,7 +3107,7 @@
   "slug": "warme-salade-van-knolvenkel-aardappel-en-sperziebonen"
  },
  {
-  "pagina": 145,
+  "pagina": 147,
   "foto": "provencaalse-ovenschotel",
   "titel": "Provençaalse ovenschotel",
   "ondertitel": "met knolvenkel, sperziebonen, aardappel en kip",
@@ -3112,7 +3153,7 @@
   "slug": "provencaalse-ovenschotel"
  },
  {
-  "pagina": 147,
+  "pagina": 149,
   "foto": "hongaarse-goulash",
   "titel": "Hongaarse goulash",
   "ondertitel": "met aardappel, wortel, peper en tomaat",
@@ -3161,7 +3202,7 @@
   "slug": "hongaarse-goulash"
  },
  {
-  "pagina": 149,
+  "pagina": 151,
   "foto": "indonesische-sayur-lodeh",
   "titel": "Indonesische sayur lodeh",
   "ondertitel": "met spitskool, wortel en kip",
@@ -3211,7 +3252,7 @@
   "slug": "indonesische-sayur-lodeh"
  },
  {
-  "pagina": 151,
+  "pagina": 153,
   "foto": "ierse-colcannon",
   "titel": "Ierse colcannon",
   "ondertitel": "met palmkool en prei, met gebakken worst",
@@ -3255,7 +3296,7 @@
   "slug": "ierse-colcannon"
  },
  {
-  "pagina": 153,
+  "pagina": 155,
   "foto": "tunesische-pompoenstoof",
   "titel": "Tunesische pompoenstoof",
   "ondertitel": "met paprika, palmkool en lamsgehakt",
@@ -3307,7 +3348,7 @@
   "slug": "tunesische-pompoenstoof"
  },
  {
-  "pagina": 155,
+  "pagina": 157,
   "foto": "pompoen-andijvielasagne",
   "titel": "Pompoen-andijvielasagne",
   "ondertitel": "met ricotta en salie",
@@ -3354,7 +3395,7 @@
   "slug": "pompoen-andijvielasagne"
  },
  {
-  "pagina": 157,
+  "pagina": 159,
   "foto": "japanse-pompoen-kipcurry-kabocha-kare",
   "titel": "Japanse pompoen-kipcurry (kabocha kare)",
   "ondertitel": "met winterwortel en prei",
@@ -3401,7 +3442,7 @@
   "slug": "japanse-pompoen-kipcurry-kabocha-kare"
  },
  {
-  "pagina": 159,
+  "pagina": 161,
   "foto": "krulsla",
   "titel": "Krulsla",
   "ondertitel": "met geroosterde rode biet, geitenkaas en walnoten",
@@ -3454,7 +3495,7 @@
   "slug": "krulsla"
  },
  {
-  "pagina": 161,
+  "pagina": 163,
   "foto": "engelse-traybake",
   "titel": "Engelse traybake",
   "ondertitel": "met pastinaak, knolvenkel, aardappel en kip",
@@ -3500,7 +3541,7 @@
   "slug": "engelse-traybake"
  },
  {
-  "pagina": 163,
+  "pagina": 165,
   "foto": "turkse-lahmacun",
   "titel": "Turkse lahmacun",
   "ondertitel": "met lamsgehakt, paprika en peper",
@@ -3564,7 +3605,7 @@
   "slug": "turkse-lahmacun"
  },
  {
-  "pagina": 165,
+  "pagina": 167,
   "foto": "hollandse-andijvie-ovenschotel",
   "titel": "Hollandse andijvie-ovenschotel",
   "ondertitel": "met aardappel, spekjes en kaas",
@@ -3610,7 +3651,7 @@
   "slug": "hollandse-andijvie-ovenschotel"
  },
  {
-  "pagina": 167,
+  "pagina": 169,
   "foto": "hartige-taart",
   "titel": "Hartige taart",
   "ondertitel": "met andijvie, palmkool, feta en winterwortel",
@@ -3658,7 +3699,7 @@
   "slug": "hartige-taart"
  },
  {
-  "pagina": 169,
+  "pagina": 171,
   "foto": "pompoen-chili",
   "titel": "Pompoen-chili",
   "ondertitel": "met rundergehakt, bonen en rodekoolsalade",
@@ -3715,7 +3756,7 @@
   "slug": "pompoen-chili"
  },
  {
-  "pagina": 171,
+  "pagina": 173,
   "foto": "franse-salade",
   "titel": "Franse salade",
   "ondertitel": "met veldsla, winterpostelein, warme aardappel, spek en ei",
@@ -3768,7 +3809,7 @@
   "slug": "franse-salade"
  },
  {
-  "pagina": 173,
+  "pagina": 175,
   "foto": "pizzoccheri",
   "titel": "Pizzoccheri",
   "ondertitel": "met palmkool, aardappel, salieboter en kaas",
@@ -3815,7 +3856,7 @@
   "slug": "pizzoccheri"
  },
  {
-  "pagina": 175,
+  "pagina": 177,
   "foto": "libanese-traybake",
   "titel": "Libanese traybake",
   "ondertitel": "met pastinaak, knolvenkel en kalkoen-shawarma, met fattoush",
@@ -3887,7 +3928,7 @@
   "slug": "libanese-traybake"
  },
  {
-  "pagina": 177,
+  "pagina": 179,
   "foto": "sri-lankaanse-viscurry",
   "titel": "Sri Lankaanse viscurry",
   "ondertitel": "met aardappel en snijbiet, met palmkool-mallung",
@@ -3953,7 +3994,7 @@
   "slug": "sri-lankaanse-viscurry"
  },
  {
-  "pagina": 179,
+  "pagina": 181,
   "foto": "belgische-groenlofstoemp",
   "titel": "Belgische groenlofstoemp",
   "ondertitel": "met blauwe kaas, appel, hazelnoten en eendenborst",
@@ -4012,7 +4053,7 @@
   "slug": "belgische-groenlofstoemp"
  },
  {
-  "pagina": 181,
+  "pagina": 183,
   "foto": "koreaanse-bibimbap",
   "titel": "Koreaanse bibimbap",
   "ondertitel": "met varkensgehakt, wortel, raapsteel-namul en groenlof-geotjeori",
@@ -4091,7 +4132,7 @@
   "slug": "koreaanse-bibimbap"
  },
  {
-  "pagina": 183,
+  "pagina": 185,
   "foto": "thaise-rode-pompoencurry",
   "titel": "Thaise rode pompoencurry",
   "ondertitel": "met garnalen, winterwortel en munt",
@@ -4151,7 +4192,7 @@
   "slug": "thaise-rode-pompoencurry"
  },
  {
-  "pagina": 185,
+  "pagina": 187,
   "foto": "scandinavische-warme-salade-van-gele-biet",
   "titel": "Scandinavische warme salade van gele biet",
   "ondertitel": "met gerookte makreel, aardappel en veldsla",
@@ -4232,7 +4273,7 @@
   "slug": "scandinavische-warme-salade-van-gele-biet"
  },
  {
-  "pagina": 187,
+  "pagina": 189,
   "foto": "toscaanse-stoof-van-kievitsbonen",
   "titel": "Toscaanse stoof van kievitsbonen",
   "ondertitel": "met snijbiet, palmkool en salie-polpette",
@@ -4312,7 +4353,7 @@
   "slug": "toscaanse-stoof-van-kievitsbonen"
  },
  {
-  "pagina": 189,
+  "pagina": 191,
   "foto": "georgische-adjika-kip",
   "titel": "Georgische adjika-kip",
   "ondertitel": "met geroosterde aardappel, bietenpkhali en muntyoghurt",
@@ -4391,7 +4432,7 @@
   "slug": "georgische-adjika-kip"
  },
  {
-  "pagina": 191,
+  "pagina": 193,
   "foto": "peruaanse-causa",
   "titel": "Peruaanse causa",
   "ondertitel": "met gebakken zalm, avocado en groenlof-posteleinsalade",
@@ -4474,7 +4515,7 @@
   "slug": "peruaanse-causa"
  },
  {
-  "pagina": 193,
+  "pagina": 195,
   "foto": "indiase-keema-palak",
   "titel": "Indiase keema palak",
   "ondertitel": "met lamsgehakt, spinazie en munt-raita",
@@ -4547,7 +4588,7 @@
   "slug": "indiase-keema-palak"
  },
  {
-  "pagina": 195,
+  "pagina": 197,
   "foto": "bretonse-boekweitgalettes",
   "titel": "Bretonse boekweitgalettes",
   "ondertitel": "met gestoofde prei, gerookte forel en veldsla-posteleinsalade",
@@ -4629,7 +4670,7 @@
   "slug": "bretonse-boekweitgalettes"
  },
  {
-  "pagina": 197,
+  "pagina": 199,
   "foto": "mexicaanse-taco-s",
   "titel": "Mexicaanse taco's",
   "ondertitel": "met geroosterde pastinaak, chorizo en raapsteel-salsa verde",
@@ -4702,7 +4743,7 @@
   "slug": "mexicaanse-taco-s"
  },
  {
-  "pagina": 199,
+  "pagina": 201,
   "foto": "herfsttraybake",
   "titel": "Herfsttraybake",
   "ondertitel": "met pompoen, biet, venkel en witvis",
@@ -4766,7 +4807,7 @@
   "slug": "herfsttraybake"
  },
  {
-  "pagina": 201,
+  "pagina": 203,
   "foto": "pasta-rode-saus",
   "titel": "Pasta rode saus",
   "ondertitel": "met gehakt, winterpeen, paprika en courgette",
@@ -4832,7 +4873,7 @@
   "slug": "pasta-rode-saus"
  },
  {
-  "pagina": 203,
+  "pagina": 205,
   "foto": "marokkaanse-warme-linzensalade",
   "titel": "Marokkaanse warme linzensalade",
   "ondertitel": "met boerenkool, geroosterde winterwortel en runder-kefta",
@@ -4921,7 +4962,7 @@
   "slug": "marokkaanse-warme-linzensalade"
  },
  {
-  "pagina": 205,
+  "pagina": 207,
   "foto": "sichuan-kung-pao-kip",
   "titel": "Sichuan kung pao kip",
   "ondertitel": "met yacon, winterwortel en snijbiet",
@@ -5005,7 +5046,7 @@
   "slug": "sichuan-kung-pao-kip"
  },
  {
-  "pagina": 207,
+  "pagina": 209,
   "foto": "hollandse-rauwe-stamppot",
   "titel": "Hollandse rauwe stamppot",
   "ondertitel": "van veldsla, postelein en gestoofde prei met gebakken kabeljauw en bieslookboter",
@@ -5083,7 +5124,7 @@
   "slug": "hollandse-rauwe-stamppot"
  },
  {
-  "pagina": 211,
+  "pagina": 213,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
   "ondertitel": "met munt",
@@ -5123,7 +5164,7 @@
   "slug": "rabarbersiroop"
  },
  {
-  "pagina": 213,
+  "pagina": 215,
   "foto": "rabarbercompote",
   "titel": "Rabarbercompote",
   "ondertitel": "met gember en munt",
@@ -5162,7 +5203,7 @@
   "slug": "rabarbercompote"
  },
  {
-  "pagina": 215,
+  "pagina": 217,
   "foto": "rabarber-aardbeiencrumble",
   "titel": "Rabarber-aardbeiencrumble",
   "ondertitel": "",
@@ -5209,7 +5250,7 @@
   "slug": "rabarber-aardbeiencrumble"
  },
  {
-  "pagina": 225,
+  "pagina": 227,
   "foto": "salade-van-veldsla-winterpostelein-en-andijvie",
   "titel": "Salade van veldsla, winterpostelein en andijvie",
   "ondertitel": "met peer, gorgonzola en walnoten",
@@ -5256,7 +5297,7 @@
   "slug": "salade-van-veldsla-winterpostelein-en-andijvie"
  },
  {
-  "pagina": 227,
+  "pagina": 229,
   "foto": "bio-kippendijen-uit-de-oven",
   "titel": "Bio kippendijen uit de oven",
   "ondertitel": "met pompoen, winterwortel, rode ui en salie",
@@ -5296,7 +5337,7 @@
   "slug": "bio-kippendijen-uit-de-oven"
  },
  {
-  "pagina": 229,
+  "pagina": 231,
   "foto": "gestoofde-palmkool-en-andijvie",
   "titel": "Gestoofde palmkool en andijvie",
   "ondertitel": "met knoflook, peper en citroen",
@@ -5331,7 +5372,7 @@
   "slug": "gestoofde-palmkool-en-andijvie"
  },
  {
-  "pagina": 231,
+  "pagina": 233,
   "foto": "romige-orzo",
   "titel": "Romige orzo",
   "ondertitel": "met Parmezaan, citroen en salieboter",
