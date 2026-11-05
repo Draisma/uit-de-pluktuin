@@ -2879,40 +2879,45 @@
  {
   "pagina": 135,
   "foto": "tomatensoep",
-  "titel": "Tomatensoep",
-  "ondertitel": "met verse basilicum",
+  "titel": "Clara's tomatensoep",
+  "ondertitel": "met gehaktballetjes en verse kruiden",
   "seizoen": "zomer",
   "tags": [
    "Soep",
-   "Italiaans"
+   "Hollands"
   ],
   "personen": "Voor 4 personen",
   "meta": [],
-  "intro": "Gladde soep van rijpe tomaten, sjalot en knoflook. De basilicumstelen gaan mee in de pan voor extra smaak, de blaadjes gaan er pas aan het eind door.",
+  "intro": "Gebonden tomatensoep op z'n Hollands: verse romatomaten met tomatenpuree, kleine gehaktballetjes met nootmuskaat en een flinke hand peterselie en basilicum erover.",
   "ingredienten": [
    {
     "titel": null,
     "items": [
-     "4 sjalotten, in halve ringen",
-     "4 tenen knoflook, geperst",
-     "30 g verse basilicum",
-     "6 el extra vierge olijfolie",
-     "750 g rijpe tomaten, grof gesneden",
-     "2 groentebouillontabletten",
-     "750 ml water",
-     "eventueel peper en zout"
+     "750 g romatomaten",
+     "1 kleine ui",
+     "1 el olijfolie",
+     "2 tenen knoflook",
+     "70 g tomatenpuree",
+     "1½ el tarwebloem",
+     "750 ml groentebouillon (van een tablet)",
+     "150 g half-om-halfgehakt",
+     "½ tl gemalen nootmuskaat",
+     "1½ tl kristalsuiker",
+     "3 takjes platte peterselie",
+     "½ bakje basilicum (ca. 8 g)",
+     "peper, zout"
     ]
    }
   ],
   "bereiding": [
-   "Pluk de blaadjes van de basilicum en snijd de stelen fijn. Verhit de helft van de olijfolie in een soeppan op middelhoog vuur en bak sjalot, knoflook en basilicumstelen ca. 4 minuten.",
-   "Voeg de tomaten toe en laat ze ca. 8 minuten meekoken; roer regelmatig.",
-   "Verkruimel de bouillontabletten boven de pan en voeg het water toe. Breng aan de kook en laat 10 minuten zachtjes koken.",
-   "Houd 4 blaadjes basilicum apart voor de garnering en scheur de rest grof.",
-   "Pureer de soep glad met de staafmixer. Proef eerst (de bouillon is al zout) en breng eventueel op smaak met peper en zout. Roer de gescheurde basilicum erdoor.",
-   "Schep de soep in kommen, leg op elke kom een basilicumblaadje en besprenkel met de rest van de olijfolie."
+   "Snijd de tomaten in stukjes.",
+   "Snipper de ui. Verhit de olie in een soeppan, fruit de ui en pers de knoflook erboven. Roer de tomatenpuree erdoor. Zeef de bloem erboven en roer tot hij is opgenomen.",
+   "Giet er beetje bij beetje twee derde van de bouillon bij en roer tot een gladde saus. Voeg de tomaten en de rest van de bouillon toe en laat 15 minuten koken.",
+   "Kneed intussen het gehakt met de nootmuskaat en wat peper en zout. Draai er met vochtige handen balletjes van ca. 1,5 cm van.",
+   "Pureer de soep met de staafmixer. Voeg de balletjes en de suiker toe, breng op smaak met peper en zout en laat op laag vuur nog 10-15 minuten koken.",
+   "Snijd de peterselie en de basilicum fijn en strooi ze over de soep."
   ],
-  "serveertip": "Lekker met geroosterd brood.",
+  "serveertip": "Lekker met stokbrood.",
   "tip": null,
   "hoofdstuk": "zomer",
   "slug": "tomatensoep"
