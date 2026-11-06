@@ -5469,6 +5469,58 @@
   "slug": "spaghetti-met-paprika-gehaktsaus"
  },
  {
+  "pagina": null,
+  "foto": "romige-lasagne-met-rundergehakt",
+  "titel": "Romige lasagne",
+  "ondertitel": "met rundergehakt, rode peper en basilicum",
+  "seizoen": "herfst",
+  "tags": [
+   "Hoofdgerecht",
+   "Italiaans"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 50 minuten",
+   "ovenschaal"
+  ],
+  "intro": "Een lasagne zonder urenlang sudderen: de saus wordt gebonden met boter, bloem en bouillon en daarna romig gemaakt met kookroom, paprikapoeder en Grana Padano. Rode peper geeft een zachte warmte. In een half uur staat hij in de oven.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "400 g rundergehakt",
+     "2 uien, gesnipperd",
+     "3 tenen knoflook, fijngesneden",
+     "2 rode pepers, zonder zaadlijsten, fijngesneden",
+     "4 pruimtomaten, in blokjes",
+     "4 el roomboter",
+     "4 el bloem",
+     "600 ml groentebouillon",
+     "200 ml kookroom",
+     "4 tl paprikapoeder",
+     "100 g Grana Padano, geschaafd",
+     "6 lasagnebladen",
+     "1 el olijfolie",
+     "12 blaadjes basilicum",
+     "peper, zout"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 200 °C en maak de bouillon.",
+   "Bak het gehakt zonder olie in een wok of hapjespan op middelhoog vuur in 3 minuten rul. Breng op smaak met peper en zout en schep het uit de pan.",
+   "Smelt de boter in dezelfde pan en fruit ui, knoflook en rode peper 2 minuten op middellaag vuur. Strooi de bloem erover en bak al roerend 2 minuten mee.",
+   "Schenk een derde van de bouillon erbij en klop met een garde tot de saus glad en gebonden is. Herhaal dit twee keer met de rest van de bouillon. Voeg de tomaat toe, breng aan de kook en laat 1 minuut doorkoken.",
+   "Roer paprikapoeder, kookroom, het gehakt en een derde van de kaas erdoor. Breng op smaak met peper en zout.",
+   "Vet een ovenschaal in met de olijfolie en schep er een dun laagje saus in. Leg er lasagnebladen op en druk ze goed aan. Wissel saus en bladen af tot de saus bijna op is en eindig met een laag saus en de rest van de kaas.",
+   "Bak de lasagne 20-25 minuten in de oven. Laat hem 5 minuten rusten voor het aansnijden, dan dikt de saus wat in. Garneer met de basilicum."
+  ],
+  "serveertip": "Lekker met een frisse groene salade.",
+  "tip": "Meer groente erin? Bak een courgette in blokjes of een paar handen spinazie of snijbiet mee met de ui. Liever wat lichter? Gebruik de helft van de kookroom, of laat hem weg en neem 50 ml extra bouillon.",
+  "hoofdstuk": "herfst",
+  "slug": "romige-lasagne-met-rundergehakt"
+ },
+ {
   "pagina": 223,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
