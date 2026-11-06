@@ -5371,6 +5371,104 @@
   "slug": "griekse-prasorizo"
  },
  {
+  "pagina": null,
+  "foto": "exotische-rijst",
+  "titel": "Exotische rijst",
+  "ondertitel": "met kip, kerrie, perzik en cashewnoten",
+  "seizoen": "herfst",
+  "tags": [
+   "Gezinsmaaltijd",
+   "Huiskeuken"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 25 minuten"
+  ],
+  "intro": "Een klassieker uit de receptenmap van thuis: kip met kerrie, zoete perzik en paprika, fijne doperwtjes en knapperige cashewnoten door de rijst. Alles gaat in één pan, terwijl de rijst kookt.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "1 pak rijst in kookbuiltjes",
+     "500 g kipfilet",
+     "1 ui, gesnipperd",
+     "1 teen knoflook",
+     "1 rode paprika",
+     "4 perzikhelften (uit blik), uitgelekt",
+     "1 klein blikje zeer fijne doperwtjes, uitgelekt",
+     "50 g ongezouten cashewnoten",
+     "25 g boter of margarine",
+     "1 el zonnebloemolie",
+     "1 el kerrie",
+     "peper, zout"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Kook de rijstbuiltjes in ruim water met zout in 13 minuten gaar.",
+   "Snijd intussen de kipfilet in dunne reepjes en bestrooi met peper en zout.",
+   "Verhit de boter en de olie in een hapjespan en bak de kip rondom bruin. Voeg de ui toe en bak even mee.",
+   "Roer de kerrie erdoor, pers de knoflook erboven uit en bak alles zo'n 5 minuten zachtjes.",
+   "Verwijder de zaadlijsten uit de paprika, snijd hem in dunne reepjes en bak 2 minuten mee.",
+   "Snijd de perzikhelften in even dunne reepjes en warm ze samen met de doperwtjes mee.",
+   "Hak de cashewnoten grof. Schep de rijst en de noten door het mengsel en breng op smaak met peper en zout."
+  ],
+  "serveertip": null,
+  "tip": "Rooster de cashewnoten eerst een paar minuten in een droge koekenpan, dan worden ze extra knapperig.",
+  "hoofdstuk": "herfst",
+  "slug": "exotische-rijst"
+ },
+ {
+  "pagina": null,
+  "foto": "spaghetti-met-paprika-gehaktsaus",
+  "titel": "Spaghetti met paprika-gehaktsaus",
+  "ondertitel": "met chorizo en groene paprika",
+  "seizoen": "herfst",
+  "tags": [
+   "Gezinsmaaltijd",
+   "Huiskeuken"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 20 minuten"
+  ],
+  "intro": "Snelle doordeweekse pasta uit de receptenmap van thuis: rul gebakken rundergehakt met chorizo, groene paprika en pittig paprikapoeder in een tomatensaus. In twintig minuten op tafel.",
+  "ingredienten": [
+   {
+    "titel": "Saus",
+    "items": [
+     "300 g rundergehakt",
+     "100 g chorizo (vleeswaren)",
+     "1 ui, fijngesnipperd",
+     "1 groene paprika",
+     "2 tl pikant paprikapoeder",
+     "2 tl Italiaanse kruiden",
+     "1 blik tomatenblokjes (400 g)",
+     "peper, zout"
+    ]
+   },
+   {
+    "titel": "Erbij",
+    "items": [
+     "300 g spaghetti",
+     "50 g Parmezaanse kaas, geraspt"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Bak het gehakt in een hapjespan al omscheppend in ca. 5 minuten rul.",
+   "Snijd intussen de chorizo in dunne reepjes, voeg toe aan het gehakt en bak ca. 3 minuten mee.",
+   "Maak de paprika schoon en snijd hem in kleine stukjes. Voeg ui, paprika en paprikapoeder toe en bak ca. 2 minuten mee.",
+   "Roer de Italiaanse kruiden en de tomatenblokjes met hun vocht erdoor en laat nog ca. 10 minuten zachtjes sudderen.",
+   "Kook intussen de spaghetti in water met zout volgens de verpakking en giet af.",
+   "Breng de saus op smaak met peper en zout. Verdeel de spaghetti over vier borden, schep de saus erover en serveer met de Parmezaanse kaas."
+  ],
+  "serveertip": null,
+  "tip": null,
+  "hoofdstuk": "herfst",
+  "slug": "spaghetti-met-paprika-gehaktsaus"
+ },
+ {
   "pagina": 219,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
