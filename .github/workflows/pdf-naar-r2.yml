@@ -1,0 +1,62 @@
+# Zet de pdf van het boek in Cloudflare R2 (bucket "files"), zodat hij te downloaden is op
+# https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf
+#
+# Werkt bij elke nieuwe GitHub Release met een pdf als bijlage. Nodig als repository-secrets:
+# R2_ACCOUNT_ID, R2_ACCESS_KEY_ID en R2_SECRET_ACCESS_KEY (token met Object Read & Write op de bucket).
+name: Pdf naar R2
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release-tag waarvan de pdf geüpload moet worden
+        required: true
+
+permissions:
+  contents: read
+
+env:
+  BUCKET: files
+  SLEUTEL: kookboek/uit-de-pluktuin-2026.pdf
+  URL: https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pdf uit de release halen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: |
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.pdf' --output boek.pdf
+          ls -l boek.pdf
+          head -c 5 boek.pdf | grep -q '%PDF-'
+
+      - name: Uploaden naar R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          AWS_REQUEST_CHECKSUM_CALCULATION: WHEN_REQUIRED
+          AWS_RESPONSE_CHECKSUM_VALIDATION: WHEN_REQUIRED
+          ENDPOINT: https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
+        run: |
+          aws s3 cp boek.pdf "s3://$BUCKET/$SLEUTEL" --endpoint-url "$ENDPOINT" \
+            --content-type application/pdf \
+            --content-disposition 'attachment; filename="Uit de pluktuin 2026.pdf"' \
+            --cache-control 'public, max-age=86400'
+
+      - name: Controleren of hij online staat
+        run: |
+          verwacht=$(stat -c %s boek.pdf)
+          for i in 1 2 3 4 5 6; do
+            code=$(curl -s -o online.pdf -w '%{http_code}' "$URL?check=$GITHUB_RUN_ID")
+            if [ "$code" = 200 ] && [ "$(stat -c %s online.pdf)" = "$verwacht" ]; then
+              echo "Online: $URL ($verwacht bytes)"; exit 0
+            fi
+            echo "Poging $i: status $code"; sleep 10
+          done
+          exit 1
