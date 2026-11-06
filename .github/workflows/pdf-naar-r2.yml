@@ -1,21 +1,29 @@
-# Zet de pdf van het boek in Cloudflare R2 (bucket "files"), zodat hij te downloaden is op
-# https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf
+# Bouwt de pdf van het boek uit de gegevens in deze repo en zet hem in Cloudflare R2
+# (bucket "files"), zodat hij te downloaden is op https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf
 #
-# Werkt bij elke nieuwe GitHub Release met een pdf als bijlage. Nodig als repository-secrets:
-# R2_ACCOUNT_ID, R2_ACCESS_KEY_ID en R2_SECRET_ACCESS_KEY (token met Object Read & Write op de bucket).
+# Draait bij elke push naar main die recepten, foto's of de boekopmaak verandert, en met de hand
+# via "Run workflow". Nodig als repository-secrets: R2_ACCOUNT_ID, R2_ACCESS_KEY_ID en
+# R2_SECRET_ACCESS_KEY (R2-token met Object Read & Write op alleen deze bucket).
+#
+# De foto's komen uit public/fotos (1600 px breed); dat is ruim genoeg voor A4 op 150 dpi.
 name: Pdf naar R2
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/**'
+      - 'public/fotos/**'
+      - 'boek/**'
+      - '.github/workflows/pdf-naar-r2.yml'
   workflow_dispatch:
-    inputs:
-      tag:
-        description: Release-tag waarvan de pdf geüpload moet worden
-        required: true
 
 permissions:
   contents: read
+
+concurrency:
+  group: pdf-naar-r2
+  cancel-in-progress: true
 
 env:
   BUCKET: files
@@ -23,17 +31,42 @@ env:
   URL: https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf
 
 jobs:
-  upload:
+  pdf:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - name: Pdf uit de release halen
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pillow en Playwright installeren
         run: |
-          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.pdf' --output boek.pdf
-          ls -l boek.pdf
+          pip install pillow playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Drukfoto's maken uit de webfoto's
+        run: |
+          python - public/fotos fotos <<'PY'
+          import os, sys
+          from PIL import Image
+          src, uit = sys.argv[1], sys.argv[2]
+          os.makedirs(uit, exist_ok=True)
+          for f in os.listdir(src):
+              if f.endswith('-1600.webp'):
+                  Image.open(os.path.join(src, f)).convert('RGB').save(os.path.join(uit, f[:-10] + '.jpeg'), quality=92)
+          PY
+          python boek/drukfotos.py fotos drukfotos
+
+      - name: Boek bouwen
+        run: |
+          python boek/bouw.py drukfotos boek.pdf --schrijf | tee bouw.log
+          if ! git diff --quiet -- src/data; then
+            echo "::warning::De paginanummers in src/data kloppen niet meer met de pdf. Bouw het boek lokaal met --schrijf en push de nieuwe nummers."
+          fi
           head -c 5 boek.pdf | grep -q '%PDF-'
+          ls -l boek.pdf
 
       - name: Uploaden naar R2
         env:
@@ -47,13 +80,13 @@ jobs:
           aws s3 cp boek.pdf "s3://$BUCKET/$SLEUTEL" --endpoint-url "$ENDPOINT" \
             --content-type application/pdf \
             --content-disposition 'attachment; filename="Uit de pluktuin 2026.pdf"' \
-            --cache-control 'public, max-age=86400'
+            --cache-control 'public, max-age=300'
 
       - name: Controleren of hij online staat
         run: |
           verwacht=$(stat -c %s boek.pdf)
           for i in 1 2 3 4 5 6; do
-            code=$(curl -s -o online.pdf -w '%{http_code}' "$URL?check=$GITHUB_RUN_ID")
+            code=$(curl -s -o online.pdf -w '%{http_code}' "$URL?controle=$GITHUB_RUN_ID-$i")
             if [ "$code" = 200 ] && [ "$(stat -c %s online.pdf)" = "$verwacht" ]; then
               echo "Online: $URL ($verwacht bytes)"; exit 0
             fi
