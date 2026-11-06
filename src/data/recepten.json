@@ -5497,6 +5497,50 @@
   "slug": "rabarber-aardbeiencrumble"
  },
  {
+  "pagina": null,
+  "foto": "brownies",
+  "titel": "Brownies",
+  "ondertitel": "het basisrecept",
+  "seizoen": "zoet",
+  "tags": [
+   "Gebak",
+   "Dessert"
+  ],
+  "personen": "Voor 16-20 stuks",
+  "meta": [
+   "ovenschaal 20×30 cm"
+  ],
+  "intro": "Voor een verjaardag, een traktatie of gewoon omdat het weekend is. Pure chocolade en boter gesmolten in één pan, alles erdoor geroerd en de oven in. Haal ze eruit zolang het midden nog smeuïg is.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "150 g pure chocolade",
+     "150 g ongezouten roomboter",
+     "125 g kristalsuiker",
+     "125 g lichtbruine basterdsuiker",
+     "1 zakje vanillesuiker",
+     "150 g zelfrijzend bakmeel",
+     "½ tl zout",
+     "4 middelgrote eieren",
+     "1 el bloem en wat boter voor de vorm"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 175 °C. Vet de ovenschaal in, bestuif met de bloem en leg bakpapier op de bodem. Vet het bakpapier ook in.",
+   "Breek de chocolade in stukken en laat hem met de boter op laag vuur smelten. Roer regelmatig.",
+   "Haal de pan van het vuur. Roer de kristalsuiker, basterdsuiker en vanillesuiker erdoor, daarna het bakmeel en het zout. Roer de eieren er één voor één door.",
+   "Schep het beslag in de vorm, strijk glad en bak in het midden van de oven in 30-35 minuten gaar. Het midden mag nog smeuïg zijn.",
+   "Laat ca. 30 minuten afkoelen in de vorm. Snijd de randen los, keer de brownie om op een rooster, trek het bakpapier eraf en laat verder afkoelen.",
+   "Snijd in 16-20 vierkanten."
+  ],
+  "serveertip": null,
+  "tip": "schep 50 g gehakte pecannoten of walnoten door het beslag en leg er nog wat halve noten bovenop.",
+  "hoofdstuk": "zoet",
+  "slug": "brownies"
+ },
+ {
   "pagina": 233,
   "foto": "salade-van-veldsla-winterpostelein-en-andijvie",
   "titel": "Salade van veldsla, winterpostelein en andijvie",
