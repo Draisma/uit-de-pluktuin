@@ -1,6 +1,6 @@
 # Het boek bijwerken
 
-De drukversie van *Uit de pluktuin 2026* (de pdf in Google Drive, map Recepten) wordt gebouwd uit dezelfde gegevens als de site: `src/data/recepten.json`, `eetclub.json` en `boek.json`. Inhoudsopgave, hoofdstukpagina's en paginanummers rekent het bouwscript zelf uit.
+De pdf van *Uit de pluktuin 2026* (op dl.fldr.nl) wordt gebouwd uit dezelfde gegevens als de site: `src/data/recepten.json`, `eetclub.json` en `boek.json`. Inhoudsopgave, hoofdstukpagina's en paginanummers rekent het bouwscript zelf uit.
 
 | Bestand | Wat |
 | --- | --- |
@@ -8,17 +8,21 @@ De drukversie van *Uit de pluktuin 2026* (de pdf in Google Drive, map Recepten) 
 | `boek.css` | De opmaak van het boek: A4, kleuren per hoofdstuk, ingrediëntenvak, genummerde stappen |
 | `drukfotos.py` | Snijdt de originele foto's bij tot A4 (1240×1754, JPEG q80) voor in de pdf |
 | `fotoprompts.json` | De Gemini-prompt per foto, op slug |
+| `bouw-uit-webfotos.sh` | Bouwt het boek uit de webfoto's in `public/fotos` en schrijft de paginanummers terug; de originele foto's zijn dan niet nodig |
 | `hernoem-download.sh` | Verplaatst de nieuwste Gemini-download naar `kookboek-fotos/SLUG.jpeg` |
 | `fonts/` | Playfair Display, Lora en Caveat (SIL Open Font License) |
 
 ## Een recept toevoegen
 
-1. Zet het recept in `src/data/recepten.json`, achteraan in zijn hoofdstuk, met `"pagina": null` en `"foto"` gelijk aan de slug. `intro` en `serveertip` mogen een lijst van alinea's zijn.
-2. Maak de foto met Gemini (zie hieronder) en zet hem als `SLUG.jpeg` in `kookboek-fotos`.
-3. Drukfoto's: `python3 boek/drukfotos.py kookboek-fotos drukfotos`
-4. Webfoto's: `python3 scripts/fotos.py kookboek-fotos public/fotos` (en de deelplaatjes in `public/fotos/og`, verplaats die naar `public/og`).
-5. Boek: `python3 boek/bouw.py drukfotos kookboek.pdf --schrijf`. Het script meldt recepten die niet op één pagina passen; tekst wordt tot 0,76× verkleind voordat het zover is.
-6. Push naar main. De workflow `pdf-naar-r2.yml` bouwt de pdf dan opnieuw (met de webfoto's van 1600 px) en zet hem op https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf. De pdf uit stap 5, met de originele foto's, is de versie voor Google Drive en om af te drukken.
+Hiervoor is alleen de map Downloads op de Mac nodig (voor de Gemini-download). De rest draait in de repo en in GitHub Actions.
+
+1. Zet het recept in `src/data/recepten.json`, achteraan in zijn hoofdstuk, met `"pagina": null` en `"foto"` gelijk aan de slug. `intro` en `serveertip` mogen een lijst van alinea's zijn. Zet de prompt in `fotoprompts.json` en verhoog het aantal recepten op de achterflap in `boek.json`.
+2. Maak de foto met Gemini (zie hieronder) en zet hem als `SLUG.jpeg` in `~/Downloads/kookboek-fotos` (`hernoem-download.sh SLUG`).
+3. Webfoto's: kopieer alleen de nieuwe foto naar een lege map en draai `python3 scripts/fotos.py die-map public/fotos`. Verplaats het deelplaatje uit `public/fotos/og` naar `public/og`.
+4. Paginanummers: `boek/bouw-uit-webfotos.sh`. Dit bouwt het boek uit de webfoto's, net als de workflow, en schrijft de nummers terug in `src/data`. Het script meldt recepten die niet op één pagina passen; tekst wordt tot 0,76× verkleind voordat het zover is.
+5. Push naar main. Cloudflare bouwt de site, en de workflow `pdf-naar-r2.yml` bouwt de pdf en zet hem op https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf.
+
+Een drukversie met de originele foto's (scherper dan 1600 px) maak je met `python3 boek/drukfotos.py ~/Downloads/kookboek-fotos drukfotos` en `python3 boek/bouw.py drukfotos boek.pdf`. Dat is alleen nodig om af te drukken.
 
 Foto's staan altijd links (even pagina's), recepten rechts. Alles na het nieuwe recept schuift twee pagina's op; omdat foto's op slug heten, hoeft er niets hernoemd te worden.
 
