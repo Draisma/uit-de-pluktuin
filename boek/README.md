@@ -18,7 +18,7 @@ De drukversie van *Uit de pluktuin 2026* (de pdf in Google Drive, map Recepten) 
 3. Drukfoto's: `python3 boek/drukfotos.py kookboek-fotos drukfotos`
 4. Webfoto's: `python3 scripts/fotos.py kookboek-fotos public/fotos` (en de deelplaatjes in `public/fotos/og`, verplaats die naar `public/og`).
 5. Boek: `python3 boek/bouw.py drukfotos kookboek.pdf --schrijf`. Het script meldt recepten die niet op één pagina passen; tekst wordt tot 0,76× verkleind voordat het zover is.
-6. Pdf voor de site: zet de pdf als `boek.pdf` in de werkmap en draai `python3 ../scripts/pdf-web.py 960 72`.
+6. Push naar main. De workflow `pdf-naar-r2.yml` bouwt de pdf dan opnieuw (met de webfoto's van 1600 px) en zet hem op https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf. De pdf uit stap 5, met de originele foto's, is de versie voor Google Drive en om af te drukken.
 
 Foto's staan altijd links (even pagina's), recepten rechts. Alles na het nieuwe recept schuift twee pagina's op; omdat foto's op slug heten, hoeft er niets hernoemd te worden.
 

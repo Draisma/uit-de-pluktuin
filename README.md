@@ -24,7 +24,8 @@ npm run build    # bouwt naar dist/
 | `scripts/extract.py` | Haalde de eerste 90 recepten uit de oude kookboek-pdf (niet meer nodig: het boek wordt nu uit de data gebouwd) |
 | `scripts/fotos.py` | Zet de originele foto's om naar webformaten |
 | `boek/` | De drukversie van het boek: bouwscript, opmaak, lettertypen en fotoprompts (zie `boek/README.md`) |
-| `public/kookboek.pdf` | Het boek als download, foto's verkleind tot 960 px zodat hij onder de 25 MiB-limiet van Cloudflare blijft (`scripts/pdf-web.py 960 72`) |
+| `.github/workflows/pdf-naar-r2.yml` | Bouwt bij elke push naar main de pdf van het boek en zet hem in Cloudflare R2: https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf |
+| `public/_redirects` | Stuurt de oude link `/kookboek.pdf` door naar de pdf in R2 |
 
 Een recept aanpassen? Bewerk `src/data/recepten.json` en push: Cloudflare bouwt de site dan automatisch opnieuw.
 
@@ -37,13 +38,14 @@ De site draait als Cloudflare Worker met statische assets (zie `wrangler.jsonc`)
 - Worker-naam: `uit-de-pluktuin` (moet gelijk zijn aan `name` in `wrangler.jsonc`)
 - Node-versie: via `.node-version` (22)
 - Domein: https://kookboek.fldr.nl
+- Pdf: R2-bucket `files`, eigen domein https://dl.fldr.nl. De workflow `pdf-naar-r2.yml` uploadt hem met de repository-secrets `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID` en `R2_SECRET_ACCESS_KEY`. R2 heeft geen limiet van 25 MiB per bestand, zoals de statische assets van de Worker.
 
 ## Licentie
 
 | Wat | Licentie |
 | --- | --- |
 | Broncode: `src/` (behalve `src/data/`), `scripts/`, `boek/*.py`, `boek/*.sh`, `boek/boek.css` en configuratie | [MIT](LICENSE) |
-| Inhoud: recepten en teksten (`src/data/`), foto's (`public/fotos/`, `public/og/`) en het boek (`public/kookboek.pdf`) | [CC BY-NC-SA 4.0](LICENSE-CONTENT) |
+| Inhoud: recepten en teksten (`src/data/`), foto's (`public/fotos/`, `public/og/`) en het boek (de pdf op dl.fldr.nl) | [CC BY-NC-SA 4.0](LICENSE-CONTENT) |
 | Lettertypen in `boek/fonts/` (Lora, Playfair Display, Caveat) | [SIL Open Font License 1.1](boek/fonts/OFL.txt) |
 
 De inhoud mag je delen en bewerken, mits je de bron vermeldt (*Uit de pluktuin*, Florian Draisma, kookboek.fldr.nl), het niet commercieel gebruikt en bewerkingen onder dezelfde licentie deelt.
