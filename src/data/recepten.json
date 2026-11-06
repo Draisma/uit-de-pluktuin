@@ -5536,12 +5536,55 @@
    "Snijd in 16-20 vierkanten."
   ],
   "serveertip": null,
-  "tip": "schep 50 g gehakte pecannoten of walnoten door het beslag en leg er nog wat halve noten bovenop.",
+  "tip": "Schep 50 g gehakte pecannoten of walnoten door het beslag en leg er nog wat halve noten bovenop.",
   "hoofdstuk": "zoet",
   "slug": "brownies"
  },
  {
-  "pagina": 235,
+  "pagina": 227,
+  "foto": "tiramisu",
+  "titel": "Tiramisu",
+  "ondertitel": "de klassieker",
+  "seizoen": "zoet",
+  "tags": [
+   "Dessert"
+  ],
+  "personen": "Voor 8 personen",
+  "meta": [
+   "schaal 20×20 cm",
+   "minstens 2 uur koelkast"
+  ],
+  "intro": "Lange vingers gedrenkt in espresso met marsala, daartussen een luchtige crème van mascarpone, eidooiers en slagroom. Maak hem gerust een dag van tevoren: hij wordt er alleen maar beter van.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "5 eieren",
+     "500 g mascarpone",
+     "75 g kristalsuiker",
+     "125 ml slagroom",
+     "150 ml espresso of sterke koffie, afgekoeld",
+     "8 el marsala",
+     "350 g lange vingers",
+     "4 tl cacaopoeder"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Scheid de eieren. Klop de dooiers met 50 g suiker luchtig en licht van kleur. Roer de mascarpone los en meng hem erdoor.",
+   "Klop de slagroom met de rest van de suiker stijf en spatel hem door het mascarponemengsel.",
+   "Meng de espresso en de marsala in een diep bord. Doop de helft van de lange vingers er één voor één kort in en leg ze naast elkaar op de bodem van de schaal.",
+   "Verdeel de helft van de crème erover en zeef de helft van de cacao erop.",
+   "Doop de rest van de lange vingers, leg ze op de crème en eindig met de rest van de crème en de cacao.",
+   "Dek af en laat minstens 2 uur opstijven in de koelkast."
+  ],
+  "serveertip": null,
+  "tip": "Het recept bevat rauwe eieren, dus niet geschikt voor jonge kinderen, zwangeren en ouderen. Geen marsala in huis? Neem amaretto, of laat de alcohol weg en gebruik alleen koffie.",
+  "hoofdstuk": "zoet",
+  "slug": "tiramisu"
+ },
+ {
+  "pagina": 237,
   "foto": "salade-van-veldsla-winterpostelein-en-andijvie",
   "titel": "Salade van veldsla, winterpostelein en andijvie",
   "ondertitel": "met peer, gorgonzola en walnoten",
@@ -5588,7 +5631,7 @@
   "slug": "salade-van-veldsla-winterpostelein-en-andijvie"
  },
  {
-  "pagina": 237,
+  "pagina": 239,
   "foto": "bio-kippendijen-uit-de-oven",
   "titel": "Bio kippendijen uit de oven",
   "ondertitel": "met pompoen, winterwortel, rode ui en salie",
@@ -5628,7 +5671,7 @@
   "slug": "bio-kippendijen-uit-de-oven"
  },
  {
-  "pagina": 239,
+  "pagina": 241,
   "foto": "gestoofde-palmkool-en-andijvie",
   "titel": "Gestoofde palmkool en andijvie",
   "ondertitel": "met knoflook, peper en citroen",
@@ -5663,7 +5706,7 @@
   "slug": "gestoofde-palmkool-en-andijvie"
  },
  {
-  "pagina": 241,
+  "pagina": 243,
   "foto": "romige-orzo",
   "titel": "Romige orzo",
   "ondertitel": "met Parmezaan, citroen en salieboter",
