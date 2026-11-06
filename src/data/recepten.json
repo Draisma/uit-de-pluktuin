@@ -5521,6 +5521,104 @@
   "slug": "romige-lasagne-met-rundergehakt"
  },
  {
+  "pagina": null,
+  "foto": "zalm-en-croute",
+  "titel": "Zalm en croûte",
+  "ondertitel": "met olijventapenade, tomaat, mozzarella en basilicum",
+  "seizoen": "herfst",
+  "tags": [
+   "Hoofdgerecht",
+   "Huiskeuken"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 55 minuten",
+   "platte bakvorm"
+  ],
+  "intro": "Een hele zalmfilet in een jasje van bladerdeeg, met een laagje zwarte-olijventapenade, basilicum, tomaat en mozzarella erop. Vraag bij de visboer om een stuk uit het dikke voorste deel van de vis, niet van de staart, dan blijft hij mooi sappig. Forel, schelvis of kabeljauw gaan ook.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "1 zalmfilet van 800 g, zonder graat",
+     "1 pak bladerdeeg van roomboter (500 g)",
+     "bloem, om te bestuiven",
+     "4 el zwarte-olijventapenade",
+     "1 bosje basilicum",
+     "2 rijpe tomaten",
+     "1 bol verse mozzarella (150 g)",
+     "1 groot ei",
+     "olijfolie",
+     "zeezout, zwarte peper"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 200 °C. Bestuif een grote, platte bakvorm met bloem.",
+   "Rol het bladerdeeg op een met bloem bestoven werkvlak uit tot een lap zo groot als de vorm, zodat er rondom een rand van een paar centimeter overblijft. Blijf onder het rollen bloem strooien zodat het niet plakt. Leg het deeg in de vorm.",
+   "Besprenkel de zalm met olijfolie, bestrooi met zout en peper en leg hem met de velkant naar beneden midden op het deeg.",
+   "Smeer de tapenade in een dun laagje over de vis. Leg de basilicumblaadjes erop, dan de tomaat in plakjes en de mozzarella in gescheurde stukjes. Besprenkel met nog wat olie en bestrooi met zout en peper.",
+   "Vouw de randen van het deeg naar binnen over de vulling en druk ze aan. Klop het ei los en bestrijk de deegrand ermee.",
+   "Zet de vorm onderin de oven met een lege bakplaat erboven, zodat de bovenkant niet te snel bruint. Bak 35 minuten tot het deeg goudbruin en krokant is.",
+   "Zet de vorm midden op tafel en laat iedereen zelf opscheppen."
+  ],
+  "serveertip": "Lekker met gestoomde groente of een groene salade.",
+  "tip": null,
+  "hoofdstuk": "herfst",
+  "slug": "zalm-en-croute"
+ },
+ {
+  "pagina": null,
+  "foto": "paella",
+  "titel": "Paella",
+  "ondertitel": "met kip, chorizo en zeebanket",
+  "seizoen": "herfst",
+  "tags": [
+   "Hoofdgerecht",
+   "Spaans"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 45 minuten",
+   "grote braadpan"
+  ],
+  "intro": "Spaanse rijst uit één pan, met vlees én vis: kippendij, rookspek en pittige chorizo, en op het eind een handvol zeebanket en doperwten. Elke vis of schaaldier past erin, van mosselen en garnalen tot inktvis of een stukje witvis.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "275 g paellarijst",
+     "3 kippendijen zonder vel en bot",
+     "75 g chorizo",
+     "3 plakken mager rookspek",
+     "275 g gemengd zeebanket (mosselen, gepelde garnalen, inktvis, witvis)",
+     "1 ui",
+     "2 tenen knoflook",
+     "1 bosje bladpeterselie",
+     "1 kippenbouillonblokje",
+     "plukje saffraan (naar wens)",
+     "1 flinke hand doperwten uit de diepvries",
+     "2 citroenen",
+     "olijfolie",
+     "zeezout, zwarte peper"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Schrob de mosselen of andere schelpdieren. Snijd inktvis of witvis in stukken van ongeveer 3 cm.",
+   "Pluk de peterselieblaadjes en hak ze grof, en hak ook de steeltjes. Snijd de kip in hapklare stukken en de chorizo en het rookspek klein. Snipper de ui en hak de knoflook. Los het bouillonblokje op in 1 L kokend water.",
+   "Verhit een scheut olijfolie in een grote braadpan op hoog vuur. Bak peterselie, kip, chorizo en spek ongeveer 5 minuten, tot de kip goudbruin is. Voeg ui en knoflook toe en bak nog 5 minuten.",
+   "Roer de saffraan en de rijst erdoor met een snuf zout en peper. Schenk de hete bouillon erbij, breng aan de kook en schraap de aanbaksels los van de bodem.",
+   "Deksel erop en zet het vuur laag. Laat de rijst zachtjes garen volgens de verpakking.",
+   "Is de rijst bijna gaar, roer dan het zeebanket en de erwten erdoor en knijp er het sap van 1 citroen boven uit. Laat nog 5 minuten garen. Proef op zout en peper en schenk er wat water bij als het te droog wordt: de rijst moet smeuïg blijven.",
+   "Zet de pan midden op tafel met de tweede citroen in partjes erbij."
+  ],
+  "serveertip": null,
+  "tip": "Mosselen die na het koken nog dicht zitten, gooi je weg.",
+  "hoofdstuk": "herfst",
+  "slug": "paella"
+ },
+ {
   "pagina": 225,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
