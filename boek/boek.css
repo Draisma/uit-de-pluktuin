@@ -83,6 +83,8 @@ h3:empty { display: none; }
 .chrule { width: 22mm; height: 1.2mm; background: var(--acc); margin: 8mm 0 7mm; border-radius: 1mm; }
 .chintro { font-size: 10.5pt; line-height: 1.6; max-width: 140mm; margin: 0 0 8mm; }
 .chlist { column-count: 1; }
+a.te, .tocch h4 a { color: inherit; text-decoration: none; }
+.tocch h4 a { display: flex; flex: 1; justify-content: space-between; }
 .chlist .te, .toc .te { display: flex; align-items: baseline; gap: 2mm; font-size: calc(9pt * var(--lijst, 1)); line-height: 1.55; }
 .te .tt { flex: 0 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .te .lead { flex: 1 1 auto; border-bottom: .8pt dotted #b9aa96; transform: translateY(-1mm); min-width: 6mm; }
