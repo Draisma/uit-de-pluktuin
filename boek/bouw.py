@@ -115,9 +115,10 @@ class Book:
     def n(self):
         return len(self.pages) + 1
 
-    def add(self, cls, inner, style=''):
+    def add(self, cls, inner, style='', anker=None):
         side = 'right' if self.n % 2 == 1 else 'left'
-        self.pages.append('<section class="page %s %s" style="%s">%s</section>' % (side, cls, style, inner))
+        ident = ' id="%s"' % anker if anker else ''
+        self.pages.append('<section%s class="page %s %s" style="%s">%s</section>' % (ident, side, cls, style, inner))
         return len(self.pages)
 
     def src(self, key):
@@ -227,9 +228,9 @@ def build(pages_in=None):
     toc = '<div class="inner toc"><div class="kicker">Inhoud</div><h1 class="big">Inhoud</h1><div class="toccols">'
     if pages_in:
         for ch in hfd:
-            toc += '<div class="tocch"><h4 style="color:%s"><span>%s</span><span class="tp">%d</span></h4>' % (ch['kleur'], E(ch['titel']), pages_in[ch['slug']])
+            toc += '<div class="tocch"><h4 style="color:%s"><a href="#hfd-%s"><span>%s</span><span class="tp">%d</span></a></h4>' % (ch['kleur'], ch['slug'], E(ch['titel']), pages_in[ch['slug']])
             for soort, r in volgorde(ch['slug']):
-                toc += '<div class="te"><span class="tt">%s</span><span class="lead"></span><span class="tp">%d</span></div>' % (fmt(toc_name(r)), pages_in[r['slug']])
+                toc += '<a class="te" href="#%s"><span class="tt">%s</span><span class="lead"></span><span class="tp">%d</span></a>' % (r['slug'], fmt(toc_name(r)), pages_in[r['slug']])
             toc += '</div>'
     toc += '</div></div>'
     b.add('tocpage', toc + footer(5))
@@ -241,27 +242,27 @@ def build(pages_in=None):
         items = volgorde(ch['slug'])
         for soort, r in items:
             r2 = r if soort == 'recept' or r['titel'] != 'Herfstdiner voor zes' else dict(r, ondertitel='menu en draaiboek')
-            lst += '<div class="te"><span class="tt">%s</span><span class="lead"></span><span class="tp">%s</span></div>' % (fmt(toc_name(r2)), (pages_in or {}).get(r['slug'], ''))
+            lst += '<a class="te" href="#%s"><span class="tt">%s</span><span class="lead"></span><span class="tp">%s</span></a>' % (r['slug'], fmt(toc_name(r2)), (pages_in or {}).get(r['slug'], ''))
         pages[ch['slug']] = b.n
         b.add('opener', '<div class="inner"><div class="chno">Hoofdstuk %d</div><h1 class="chname">%s</h1><div class="chmonths">%s</div><div class="chrule"></div>'
-                        '<p class="chintro">%s</p><div class="chlist">%s</div></div>%s' % (ch['nummer'], E(ch['titel']), E(ch['periode']), E(ch['intro']), lst, footer(b.n, ch)), style)
+                        '<p class="chintro">%s</p><div class="chlist">%s</div></div>%s' % (ch['nummer'], E(ch['titel']), E(ch['periode']), E(ch['intro']), lst, footer(b.n, ch)), style, 'hfd-' + ch['slug'])
         for soort, r in items:
             if soort == 'menu' and isinstance(r.get('draaiboek'), str):
                 b.img(r['foto'])
                 pages[r['slug']] = b.n
-                b.add('recipe', zomer_menu(r) + footer(b.n, ch), style)
+                b.add('recipe', zomer_menu(r) + footer(b.n, ch), style, r['slug'])
                 d = next(e for e in EETCLUB if e['slug'] == r['draaiboek'])
                 b.img(d['foto'])
                 pages[d['slug']] = b.n
-                b.add('recipe', draaiboek_page(d, r) + footer(b.n, ch), style)
+                b.add('recipe', draaiboek_page(d, r) + footer(b.n, ch), style, d['slug'])
             elif soort == 'menu':
                 b.img(r['foto'])
                 pages[r['slug']] = b.n
-                b.add('menu', herfst_menu(r) + footer(b.n, ch), style)
+                b.add('menu', herfst_menu(r) + footer(b.n, ch), style, r['slug'])
             else:
                 b.img(r['foto'])
                 pages[r['slug']] = b.n
-                b.add('recipe', recipe_page(ch, r) + footer(b.n, ch), style)
+                b.add('recipe', recipe_page(ch, r) + footer(b.n, ch), style, r['slug'])
     if b.n % 2 == 1:
         b.add('notes', '<div class="inner prose"><div class="kicker">Notities</div><h1 class="big">Notities</h1><div class="lines">' + '<div class="ln"></div>' * 26 + '</div></div>' + footer(b.n))
     colofon = '<br>'.join(E(r) for r in BOEK.get('colofon', '').split('\n'))
