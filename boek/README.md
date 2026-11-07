@@ -4,7 +4,7 @@ De pdf van *Uit de pluktuin 2026* (op dl.fldr.nl) wordt gebouwd uit dezelfde geg
 
 | Bestand | Wat |
 | --- | --- |
-| `bouw.py` | Bouwt het boek als html en zet het met Playwright/Chromium om naar een A4-pdf. Met `--schrijf` zet hij de paginanummers terug in `recepten.json` en `eetclub.json` |
+| `bouw.py` | Bouwt het boek als html en zet het met Playwright/Chromium om naar een A4-pdf. De inhoudsopgave en de lijsten op de hoofdstukpagina's zijn klikbaar (elke pagina krijgt de slug als anker). Met `--schrijf` zet hij de paginanummers terug in `recepten.json` en `eetclub.json` |
 | `boek.css` | De opmaak van het boek: A4, kleuren per hoofdstuk, ingrediëntenvak, genummerde stappen |
 | `drukfotos.py` | Snijdt de originele foto's bij tot A4 (1240×1754, JPEG q80) voor in de pdf |
 | `fotoprompts.json` | De Gemini-prompt per foto, op slug |
