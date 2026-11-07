@@ -5619,6 +5619,62 @@
   "slug": "paella"
  },
  {
+  "pagina": null,
+  "foto": "kievitsbonenstoof-met-salsiccia",
+  "titel": "Kievitsbonenstoof",
+  "ondertitel": "met salsiccia en boerenkool",
+  "seizoen": "herfst",
+  "tags": [
+   "Hoofdgerecht",
+   "Italiaans"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 50 minuten met verse bonen"
+  ],
+  "intro": "Romige herfststoof uit één pan, met verse kievitsbonen uit de pluktuin. Gebakken salsiccia geeft vet en kruiden aan de saus, de boerenkool gaat er op het laatst bij.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "600 g verse kievitsbonen, gedopt (ca. 1,2 kg in de peul), of 250 g gedroogde",
+     "400 g salsiccia of grove verse worst",
+     "2 el olijfolie, plus extra om te serveren",
+     "1 ui, gesnipperd",
+     "1 wortel, in blokjes",
+     "1 stengel bleekselderij, in blokjes",
+     "3 tenen knoflook, in plakjes",
+     "2 takjes rozemarijn",
+     "1 laurierblad",
+     "snufje chilivlokken (naar wens)",
+     "1 blik tomatenblokjes (400 g)",
+     "500 ml kippen- of groentebouillon",
+     "200 g boerenkool of cavolo nero, zonder harde nerven, grof gesneden",
+     "rasp en sap van ½ citroen",
+     "zout, peper",
+     "Parmezaan en goed brood, om erbij te geven"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Gebruik je gedroogde bonen, week ze dan een nacht in ruim water. Giet af, kook ze 10 minuten flink in vers water en laat ze daarna 60 tot 90 minuten zachtjes garen. Verse gedopte bonen hoeven niet te weken en gaan rauw de pan in.",
+   "Haal de worst uit het velletje en verdeel in stukjes. Bak in de olijfolie in een ruime pan in 5 tot 7 minuten mooi bruin. Schep de worst eruit en laat het vet in de pan.",
+   "Fruit ui, wortel en bleekselderij in het vet in ongeveer 8 minuten zacht. Bak knoflook, rozemarijn, laurier en eventueel chilivlokken 1 minuut mee.",
+   "Voeg tomaat, bouillon en de verse bonen toe. Breng aan de kook, leg het deksel half op de pan en laat 25 tot 30 minuten zachtjes stoven tot de bonen romig zacht zijn. Met voorgekookte gedroogde bonen is 15 minuten trekken genoeg.",
+   "Doe de worst terug in de pan en roer de boerenkool erdoor. Laat 5 tot 8 minuten meestoven tot de kool zacht is. Druk een paar lepels bonen plat tegen de pan, dan wordt de saus wat gebonden.",
+   "Haal de rozemarijnsteeltjes en het laurierblad eruit. Breng op smaak met zout, peper, citroenrasp en citroensap.",
+   "Schep in diepe borden, besprenkel met een scheutje olijfolie en geef Parmezaan en brood erbij."
+  ],
+  "serveertip": null,
+  "tip": [
+   "Kook de bonen altijd helemaal gaar: rauw of half gaar zijn kievitsbonen onverteerbaar en kun je er ziek van worden. De rode spikkels verdwijnen tijdens het koken, de bonen worden egaal bruin.",
+   "Vegetarisch: laat de worst weg, neem groentebouillon en bak 1 tl gerookt paprikapoeder mee met de knoflook.",
+   "De stoof smaakt de volgende dag nog beter en is goed in te vriezen."
+  ],
+  "hoofdstuk": "herfst",
+  "slug": "kievitsbonenstoof-met-salsiccia"
+ },
+ {
   "pagina": 229,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
