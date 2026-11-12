@@ -5675,6 +5675,76 @@
   "slug": "kievitsbonenstoof-met-salsiccia"
  },
  {
+  "pagina": null,
+  "foto": "hollandse-boerenkoolstamppot",
+  "titel": "Hollandse boerenkoolstamppot",
+  "ondertitel": "met rookworst en jus",
+  "seizoen": "herfst",
+  "tags": [
+   "Hoofdgerecht",
+   "Hollands"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 45 minuten"
+  ],
+  "intro": "De klassieker voor een koude novemberavond. De boerenkool gaat rauw bovenop de aardappelen de pan in en gaart in de stoom mee, daarna stamp je alles samen met boter, warme melk en een lepel mosterd. Erbij plakken rookworst, een kuiltje jus en het zuur dat erbij hoort. De bladeren uit de tuin vul je aan met een zak gesneden boerenkool.",
+  "ingredienten": [
+   {
+    "titel": "Uit de pluktuin",
+    "items": [
+     "8 bladeren boerenkool (teeltvak E)",
+     "optioneel: 1 rammenas (teeltvak K), voor het zuurtje"
+    ]
+   },
+   {
+    "titel": "Stamppot",
+    "items": [
+     "1,2 kg kruimige aardappelen (bijv. Eigenheimer of Bintje), geschild en in stukken",
+     "de tuinboerenkool plus ca. 600 g gesneden boerenkool uit de winkel, samen ca. 800 g",
+     "1 laurierblad",
+     "40 g boter",
+     "ca. 150 ml warme melk",
+     "1 el grove mosterd",
+     "nootmuskaat, zout en peper"
+    ]
+   },
+   {
+    "titel": "Worst en jus",
+    "items": [
+     "1 rookworst (ca. 275 g)",
+     "25 g boter",
+     "1 ui, in dunne halve ringen",
+     "1 el bloem",
+     "300 ml runderbouillon",
+     "scheutje ketjap of sojasaus"
+    ]
+   },
+   {
+    "titel": "Erbij",
+    "items": [
+     "augurken en zilveruitjes",
+     "mosterd"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Was de tuinboerenkool goed, snijd de harde nerven eruit en snijd de bladeren fijn. Spoel de gekochte boerenkool af en haal er grove stukken nerf uit.",
+   "Doe de aardappelen met het laurierblad in een grote pan, net niet onder water, met een flinke snuf zout. Leg alle boerenkool erbovenop, doe het deksel op de pan en breng aan de kook. Laat in ca. 20 minuten gaar worden; de kool gaart in de stoom mee.",
+   "Verwarm intussen de rookworst in heet, niet kokend water (of volgens de verpakking), ca. 20 minuten.",
+   "Jus: smelt de boter en bak de ui op middelhoog vuur in ca. 10 minuten goudbruin. Strooi de bloem erover en bak 1 minuut mee. Voeg al roerend de bouillon toe en laat 5 minuten zachtjes indikken. Breng op smaak met een scheutje ketjap en peper.",
+   "Giet de aardappelen en kool af, haal het laurierblad eruit en laat even uitdampen. Stamp alles fijn met boter, warme melk en mosterd tot een smeuïge stamppot. Breng op smaak met nootmuskaat, zout en peper.",
+   "Snijd de rookworst in plakken. Schep de stamppot op, maak een kuiltje voor de jus en leg de worst erbij. Geef augurken, zilveruitjes en mosterd erbij."
+  ],
+  "serveertip": null,
+  "tip": [
+   "Schaaf de rammenas uit de tuin in dunne plakjes en zet ze 15 minuten in een scheutje azijn met een snuf suiker en zout: een fris, pittig zuurtje naast de stamppot.",
+   "Restjes stamppot bak je de volgende dag in een koekenpan met wat boter tot er een korstje aan zit."
+  ],
+  "hoofdstuk": "herfst",
+  "slug": "hollandse-boerenkoolstamppot"
+ },
+ {
   "pagina": 231,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
