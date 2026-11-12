@@ -44,7 +44,7 @@ const pad = Astro.url.pathname;
         <nav class="nav" aria-label="Hoofdstukken">
           {hoofdstukken.map((h) => (
             <a href={`/${h.slug}/`} aria-current={pad.startsWith(`/${h.slug}/`) ? 'page' : undefined} style={`--nav-kleur:${h.kleur}`}>
-              {h.slug === 'zoet' ? 'Zoet' : h.titel}
+              {h.slug === 'zoet' ? 'Zoet' : h.slug === 'favorieten' ? 'Favorieten' : h.titel}
             </a>
           ))}
         </nav>
