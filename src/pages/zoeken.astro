@@ -24,7 +24,7 @@ const soorten = ['Hoofdgerecht', 'Salade', 'Soep', 'Bijgerecht', 'Voorgerecht', 
     </form>
     <div class="filters" role="group" aria-label="Filter">
       <button type="button" data-filter="" aria-pressed="true">Alles</button>
-      {hoofdstukken.map((h) => <button type="button" data-filter={`h:${h.slug}`} aria-pressed="false" style={`--kleur:${h.kleur}`}>{h.slug === 'zoet' ? 'Zoet' : h.titel}</button>)}
+      {hoofdstukken.map((h) => <button type="button" data-filter={`h:${h.slug}`} aria-pressed="false" style={`--kleur:${h.kleur}`}>{h.slug === 'zoet' ? 'Zoet' : h.slug === 'favorieten' ? 'Favorieten' : h.titel}</button>)}
       <span class="scheiding" aria-hidden="true"></span>
       {soorten.map((s) => <button type="button" data-filter={`t:${s.toLowerCase()}`} aria-pressed="false">{s}</button>)}
     </div>

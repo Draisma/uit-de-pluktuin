@@ -24,7 +24,7 @@ Hiervoor is alleen de map Downloads op de Mac nodig (voor de Gemini-download). D
 
 Een drukversie met de originele foto's (scherper dan 1600 px) maak je met `python3 boek/drukfotos.py ~/Downloads/kookboek-fotos drukfotos` en `python3 boek/bouw.py drukfotos boek.pdf`. Dat is alleen nodig om af te drukken.
 
-Foto's staan altijd links (even pagina's), recepten rechts. Alles na het nieuwe recept schuift twee pagina's op; omdat foto's op slug heten, hoeft er niets hernoemd te worden.
+Foto's staan altijd links (even pagina's), recepten rechts. Een hoofdstuk met `"foto2"` in `boek.json` (nu Herfst) krijgt een extra spread: de receptenlijst loopt door op de linkerpagina en de tweede hoofdstukfoto staat rechts. Alles na het nieuwe recept schuift twee pagina's op; omdat foto's op slug heten, hoeft er niets hernoemd te worden.
 
 ## Fotostijl
 

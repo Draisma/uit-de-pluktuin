@@ -30,6 +30,7 @@
 [data-hoofdstuk='lente'] { --kleur: #5f8f45; }
 [data-hoofdstuk='zomer'] { --kleur: #cf7a26; }
 [data-hoofdstuk='herfst'] { --kleur: #a4462c; }
+[data-hoofdstuk='favorieten'] { --kleur: #3d6a8a; }
 [data-hoofdstuk='zoet'] { --kleur: #bf4a68; }
 [data-hoofdstuk='eetclub'] { --kleur: #2f5a45; }
 :root, [data-hoofdstuk], [style*='--kleur'] {

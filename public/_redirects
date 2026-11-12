@@ -1,2 +1,8 @@
 # Oude downloadlink van het boek: de pdf staat nu in Cloudflare R2
 /kookboek.pdf https://dl.fldr.nl/kookboek/uit-de-pluktuin-2026.pdf 301
+# Verhuisd van Herfst naar Vaste favorieten
+/herfst/exotische-rijst/ /favorieten/exotische-rijst/ 301
+/herfst/spaghetti-met-paprika-gehaktsaus/ /favorieten/spaghetti-met-paprika-gehaktsaus/ 301
+/herfst/romige-lasagne-met-rundergehakt/ /favorieten/romige-lasagne-met-rundergehakt/ 301
+/herfst/zalm-en-croute/ /favorieten/zalm-en-croute/ 301
+/herfst/paella/ /favorieten/paella/ 301

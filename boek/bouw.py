@@ -18,7 +18,7 @@ RECEPTEN = json.load(open(os.path.join(DATA, 'recepten.json')))
 EETCLUB = json.load(open(os.path.join(DATA, 'eetclub.json')))
 BOEK = json.load(open(os.path.join(DATA, 'boek.json')))
 
-TINT = {'lente': '#e8f0dc', 'zomer': '#f8e8d4', 'herfst': '#f4e1d8', 'zoet': '#f6e0e5', 'eetclub': '#dfe9e2'}
+TINT = {'lente': '#e8f0dc', 'zomer': '#f8e8d4', 'herfst': '#f4e1d8', 'favorieten': '#dde7ee', 'zoet': '#f6e0e5', 'eetclub': '#dfe9e2'}
 
 # ----------------------------------------------------------------- html helpers
 E = lambda s: html.escape(s, quote=False)
@@ -219,7 +219,7 @@ def build(pages_in=None):
     # 1 omslag
     b.add('cover', '<img src="%s"><div class="covercard"><div class="cv-k">%s</div><h1>Uit de<br>pluktuin</h1>'
                    '<div class="cv-s">Recepten met de wekelijkse oogst<br>van De Gagelgaard</div><div class="cv-r"></div>'
-                   '<div class="cv-f">Lente <span class="dot">•</span> Zomer <span class="dot">•</span> Herfst <span class="dot">•</span> Zoet <span class="dot">•</span> Eetclub</div></div>'
+                   '<div class="cv-f">Lente <span class="dot">•</span> Zomer <span class="dot">•</span> Herfst <span class="dot">•</span> Favorieten <span class="dot">•</span> Zoet <span class="dot">•</span> Eetclub</div></div>'
           % (b.src(fotos['omslag']), E(BOEK['bovenkop'])))
     b.img(fotos['schutblad'])
     b.add('prose', voorwoord() + footer(3))
@@ -238,14 +238,21 @@ def build(pages_in=None):
     for ch in hfd:
         style = '--acc:%s;--tint:%s' % (ch['kleur'], TINT[ch['slug']])
         b.img(ch['foto'])
-        lst = ''
+        regels = []
         items = volgorde(ch['slug'])
         for soort, r in items:
             r2 = r if soort == 'recept' or r['titel'] != 'Herfstdiner voor zes' else dict(r, ondertitel='menu en draaiboek')
-            lst += '<a class="te" href="#%s"><span class="tt">%s</span><span class="lead"></span><span class="tp">%s</span></a>' % (r['slug'], fmt(toc_name(r2)), (pages_in or {}).get(r['slug'], ''))
+            regels.append('<a class="te" href="#%s"><span class="tt">%s</span><span class="lead"></span><span class="tp">%s</span></a>' % (r['slug'], fmt(toc_name(r2)), (pages_in or {}).get(r['slug'], '')))
+        # met een tweede hoofdstukfoto ('foto2') loopt de lijst door op een extra spread: vervolg links, foto rechts
+        helft = (len(regels) + 1) // 2 if ch.get('foto2') else len(regels)
+        lst = ''.join(regels[:helft])
         pages[ch['slug']] = b.n
         b.add('opener', '<div class="inner"><div class="chno">Hoofdstuk %d</div><h1 class="chname">%s</h1><div class="chmonths">%s</div><div class="chrule"></div>'
                         '<p class="chintro">%s</p><div class="chlist">%s</div></div>%s' % (ch['nummer'], E(ch['titel']), E(ch['periode']), E(ch['intro']), lst, footer(b.n, ch)), style, 'hfd-' + ch['slug'])
+        if ch.get('foto2'):
+            b.add('opener', '<div class="inner"><div class="chno chvervolg">%s, vervolg</div><div class="chlist">%s</div></div>%s'
+                            % (E(ch['titel']), ''.join(regels[helft:]), footer(b.n, ch)), style)
+            b.add('illus', '<img src="%s">' % b.src(ch['foto2']))
         for soort, r in items:
             if soort == 'menu' and isinstance(r.get('draaiboek'), str):
                 b.img(r['foto'])
@@ -298,7 +305,7 @@ FIT_JS = '''
     const cols = el.querySelector('.toccols');
     const over = () => last() > voet - 6 || (cols && cols.scrollWidth > cols.clientWidth + 1);
     while (over() && fs < 30) { fs++; el.style.setProperty('--lijst', (1 - fs * 0.02).toFixed(2)); }
-    res['lijst:' + (el.querySelector('.chname, .big').textContent)] = [1 - fs * 0.02, over()];
+    res['lijst:' + (el.querySelector('.chname, .big, .chvervolg').textContent)] = [1 - fs * 0.02, over()];
   }
   return res;
 }

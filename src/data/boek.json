@@ -2,7 +2,7 @@
   "titel": "Uit de pluktuin",
   "bovenkop": "Seizoenskookboek 2026",
   "ondertitel": "Recepten met de wekelijkse oogst van De Gagelgaard",
-  "achterflap": "119 recepten met de oogst van De Gagelgaard, van raapsteel in mei tot pompoen in oktober.",
+  "achterflap": "121 recepten met de oogst van De Gagelgaard, van raapsteel in mei tot pompoen in oktober.",
   "colofon": "© 2026 Florian Draisma · kookboek.fldr.nl\nGedeeld onder de licentie CC BY-NC-SA 4.0",
   "fotos": {"omslag": "omslag", "schutblad": "schutblad", "voorwoord": "schutblad", "inhoud": "inhoud", "achterkant": "achterkant"},
   "voorwoord": {
@@ -27,11 +27,13 @@
      "intro": "Het seizoen begint met blad en knol: raapsteel, meiraap, radijs, spinazie en de eerste kropsla. Daarna komen doperwten, tuinbonen, peultjes en koolrabi. Snelle gerechten met veel groen, en bijna altijd een handvol munt, dille of bieslook erdoor."},
     {"slug": "zomer", "nummer": 2, "titel": "Zomer", "periode": "eind juni tot eind augustus", "foto": "hoofdstuk-zomer", "kleur": "#cf7a26",
      "intro": "De tuin geeft meer dan je op kunt: courgette, bonen in alle soorten, bieten, tomaten, spitskool en knolvenkel. Dit zijn de hoofdgerechten uit de drukste maanden, van ovenschotel tot curry en van taco tot tajine. Groente in de hoofdrol, vlees of vis als smaakmaker."},
-    {"slug": "herfst", "nummer": 3, "titel": "Herfst", "periode": "september tot november", "foto": "hoofdstuk-herfst", "kleur": "#a4462c",
+    {"slug": "herfst", "nummer": 3, "titel": "Herfst", "periode": "september tot november", "foto": "hoofdstuk-herfst", "foto2": "hoofdstuk-herfst-2", "kleur": "#a4462c",
      "intro": "Pompoen, palmkool, andijvie, pastinaak en knolvenkel nemen het over. Stoofpotten, traybakes en ovenschotels die de keuken verwarmen, met af en toe nog een frisse salade van veldsla en winterpostelein of een bord stoemp met groenlof."},
-    {"slug": "zoet", "nummer": 4, "titel": "Zoet & drinken", "periode": "rabarber en aardbeien", "foto": "hoofdstuk-zoet", "kleur": "#bf4a68",
+    {"slug": "favorieten", "nummer": 4, "titel": "Vaste favorieten", "periode": "het hele jaar door", "foto": "hoofdstuk-favorieten", "kleur": "#3d6a8a",
+     "intro": "Gerechten die al jaren op tafel komen, los van wat de tuin die week geeft. Uit de receptenmap van thuis: een pasta voor doordeweeks, een rijstschotel uit één pan en een paar gerechten voor als er iets te vieren valt."},
+    {"slug": "zoet", "nummer": 5, "titel": "Zoet & drinken", "periode": "rabarber en aardbeien", "foto": "hoofdstuk-zoet", "kleur": "#bf4a68",
      "intro": "Wat er overbleef van de rabarber en de aardbeien: een siroop voor limonade (of een gin-tonic), een compote voor bij de yoghurt en een crumble voor het weekend."},
-    {"slug": "eetclub", "nummer": 5, "titel": "Eetclub", "periode": "Het Gestoofde Peertje", "foto": "hoofdstuk-eetclub", "kleur": "#2f5a45",
+    {"slug": "eetclub", "nummer": 6, "titel": "Eetclub", "periode": "Het Gestoofde Peertje", "foto": "hoofdstuk-eetclub", "kleur": "#2f5a45",
      "intro": "Twee avonden voor de eetclub: een zomerse gedeelde tafel voor vijf en een herfstdiner voor zes. Allebei met een draaiboek, zodat de kok niet de hele avond in de keuken staat en gewoon mee aan tafel zit."}
   ]
 }
