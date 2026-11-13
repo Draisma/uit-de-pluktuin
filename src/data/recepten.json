@@ -5590,6 +5590,69 @@
   "slug": "britse-fish-pie"
  },
  {
+  "pagina": null,
+  "foto": "yaconsoep",
+  "titel": "Yaconsoep",
+  "ondertitel": "met winterpostelein, prei en hazelnoot",
+  "seizoen": "herfst",
+  "tags": [
+   "Soep",
+   "Vegetarisch"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 40 minuten"
+  ],
+  "intro": "Yacon blijft ook na het koken licht zoet en fris, een beetje als een peer die in de aarde is gegroeid. In deze fluweelzachte soep krijgt hij gezelschap van prei en aardappel, die voor de binding zorgt. De winterpostelein gaat er pas op het laatst rauw bij, deels meegepureerd en deels erbovenop, samen met knapperig gebakken blokjes yacon en geroosterde hazelnoten.",
+  "ingredienten": [
+   {
+    "titel": "Uit de pluktuin",
+    "items": [
+     "500 g yacon, ca. 1 grote knol (tafel bij teeltvak G)",
+     "2 flinke handen winterpostelein, ca. 75 g (teeltvak C)",
+     "1 prei (teeltvak D)"
+    ]
+   },
+   {
+    "titel": "Soep",
+    "items": [
+     "de yacon, geschild",
+     "de prei, in halve ringen",
+     "1 ui, gesnipperd",
+     "2 tenen knoflook, fijngehakt",
+     "300 g kruimige aardappelen, geschild en in blokjes",
+     "25 g boter",
+     "1 laurierblad",
+     "1 l groentebouillon",
+     "100 ml kookroom",
+     "sap van 1/2 citroen",
+     "nootmuskaat, peper en zout"
+    ]
+   },
+   {
+    "titel": "Erop",
+    "items": [
+     "40 g hazelnoten, grof gehakt",
+     "1 el olijfolie, plus wat extra om te druppelen",
+     "de helft van de winterpostelein"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Schil de yacon. Snijd ca. 100 g in blokjes van een halve centimeter en leg die in een kommetje water met een scheutje citroensap. Snijd de rest in grove stukken; doe dat vlak voor gebruik, want yacon verkleurt snel.",
+   "Smelt de boter in een soeppan en fruit de ui en de prei met een snuf zout in ca. 8 minuten zacht, zonder te kleuren. Bak de knoflook 1 minuut mee.",
+   "Voeg de aardappelen, de stukken yacon, het laurierblad en de bouillon toe. Breng aan de kook en laat 20 minuten zachtjes koken tot de aardappel gaar is. De yacon blijft iets steviger, dat hoort zo.",
+   "Rooster intussen de hazelnoten in een droge koekenpan goudbruin en schep ze uit de pan. Laat de blokjes yacon uitlekken, dep ze droog en bak ze in de olijfolie op hoog vuur in 3-4 minuten goudbruin aan de randen. Ze moeten knapperig blijven.",
+   "Was de winterpostelein goed (er zit vaak zand tussen) en droog hem in een slacentrifuge.",
+   "Haal het laurierblad uit de soep. Voeg de helft van de postelein toe en pureer de soep met de staafmixer helemaal glad. Roer de room erdoor en breng op smaak met citroensap, nootmuskaat, peper en zout. Laat de soep niet meer koken, dan blijft hij fris van kleur.",
+   "Schep de soep in kommen. Verdeel de gebakken yacon, de rest van de postelein en de hazelnoten erover en maak af met een paar druppels olijfolie."
+  ],
+  "serveertip": "Lekker met zuurdesembrood en oude kaas.",
+  "tip": "Yacon wordt zoeter naarmate hij langer ligt. Proef de soep daarom goed af en voeg zo nodig wat extra citroensap toe. Wie wil kan 100 g uitgebakken spekjes over de soep strooien in plaats van de hazelnoten.",
+  "hoofdstuk": "herfst",
+  "slug": "yaconsoep"
+ },
+ {
   "pagina": 227,
   "foto": "exotische-rijst",
   "titel": "Exotische rijst",
