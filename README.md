@@ -1,6 +1,6 @@
 # Uit de pluktuin
 
-Website van het seizoenskookboek *Uit de pluktuin 2026*: 104 recepten met de wekelijkse oogst van pluktuin De Gagelgaard, plus de twee eetclubmenu's met draaiboek.
+Website van het seizoenskookboek *Uit de pluktuin 2026*: recepten met de wekelijkse oogst van pluktuin De Gagelgaard, plus de twee eetclubmenu's met draaiboek.
 
 Statische site, gebouwd met [Astro](https://astro.build) en gehost op Cloudflare.
 

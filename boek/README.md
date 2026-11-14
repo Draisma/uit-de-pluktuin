@@ -14,7 +14,7 @@ De pdf van *Uit de pluktuin 2026* (op dl.fldr.nl) wordt gebouwd uit dezelfde geg
 
 ## Een recept toevoegen
 
-Hiervoor is alleen de map Downloads op de Mac nodig (voor de Gemini-download). De rest draait in de repo en in GitHub Actions.
+Hiervoor zijn alleen Chrome (voor Gemini) en de map Downloads op de Mac nodig (voor de Gemini-download). De rest draait in de repo en in GitHub Actions.
 
 1. Zet het recept in `src/data/recepten.json`, achteraan in zijn hoofdstuk, met `"pagina": null` en `"foto"` gelijk aan de slug. `intro` en `serveertip` mogen een lijst van alinea's zijn. Zet de prompt in `fotoprompts.json` en verhoog het aantal recepten op de achterflap in `boek.json`.
 2. Maak de foto met Gemini (zie hieronder) en zet hem als `SLUG.jpeg` in `~/Downloads/kookboek-fotos` (`hernoem-download.sh SLUG`).

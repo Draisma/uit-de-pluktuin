@@ -43,7 +43,7 @@
    "Bouillon erbij, 20 minuten zachtjes koken tot alles zacht is.",
    "Pureer fijn met de staafmixer, voeg room toe, breng op smaak met peper, zout en nootmuskaat.",
    "Bak vlak voor serveren de salie krokant in boter.",
-   "Schep de soep in kommen, lepel een paar druppels saliebotter erover, leg de krokante blaadjes en bieslook bovenop."
+   "Schep de soep in kommen, lepel een paar druppels salieboter erover, leg de krokante blaadjes en bieslook bovenop."
   ],
   "serveertip": "Serveer met een stuk bruin brood.",
   "tip": null,
@@ -246,7 +246,7 @@
     "titel": null,
     "items": [
      "2 grote handen jonge spinazie",
-     "1 hand jonge raapsteelblaadjes (alleen het malle blad)",
+     "1 hand jonge raapsteelblaadjes (alleen het malse blad)",
      "2 meirapen, flinterdun geschaafd (mandoline of dunschiller)",
      "6 radijsjes, in dunne plakjes (als je er nog hebt)",
      "50 g geitenkaas of feta, verkruimeld",
@@ -1582,7 +1582,7 @@
    {
     "titel": null,
     "items": [
-     "1 rol bladerdeeg of hartige taartdeeg (quichevorm 24-26 cm)",
+     "1 rol bladerdeeg of hartig taartdeeg (quichevorm 24-26 cm)",
      "1 flinke prei, in halve ringen (ook het lichtgroene deel)",
      "4 sjalotjes, in halve ringen",
      "25 g boter",
@@ -1649,7 +1649,7 @@
   "bereiding": [
    "Bak de currypasta 1 minuut in wat olie tot hij geurt. Voeg het dikke deel van de kokosmelk toe en bak 2 minuten mee.",
    "Voeg de kip (of tofu) toe en bak kort rondom dicht. Rest van de kokosmelk en het water erbij, 8 minuten zachtjes koken.",
-   "Voeg de snijbonen en het witte deel van de bosui toe, kook 5 minuten. Dan de courgette erbij, nog 3-4 minuten — de groenten moeten net gaar zijn met bite.",
+   "Voeg de snijbonen en het witte deel van de bosui toe, kook 5 minuten. Dan de courgette erbij, nog 3-4 minuten: de groenten moeten net gaar zijn met bite.",
    "Breng op smaak met vissaus, suiker en limoensap.",
    "Serveer over jasmijnrijst, met het groene deel van de bosui en royaal koriander erover."
   ],
@@ -1852,7 +1852,7 @@
   ],
   "bereiding": [
    "Oven op 220 °C. Hussel de bloemkoolroosjes met olijfolie, komijn, paprikapoeder, peper en zout. Rooster 25 minuten tot gaar met donkere randjes.",
-   "Roer de tahinsaus: tahin met citroensap, knoflook en zout; klop er lepel voor lepel koud water door tot een gladde, gietbare saus (hij wordt eerst dik, dan weer dun — dat hoort).",
+   "Roer de tahinsaus: tahin met citroensap, knoflook en zout; klop er lepel voor lepel koud water door tot een gladde, gietbare saus (hij wordt eerst dik, dan weer dun, dat hoort zo).",
    "Bak de rode ui zacht, voeg knoflook, specerijen en tomatenpuree toe (1 min). Voeg het gehakt toe en bak op hoog vuur rul en bruin. Breng op smaak met peper en zout.",
    "Schik de bloemkool op een schaal, schep het gehakt erover, drizzle de tahinsaus eroverheen.",
    "Bestrooi met de kruiden, pitten en eventueel granaatappel. Serveer met platbrood of rijst."
@@ -1983,7 +1983,7 @@
   ],
   "personen": "Voor 4 personen",
   "meta": [],
-  "intro": "Courgettehelften gevuld met kruidig gehakt in tomatensaus, gegratineerd met kaas. Met rijst, bulgur of brood erbij een compleet gerecht – en met 400 g gehakt zit je netjes op zo'n 100 g per persoon.",
+  "intro": "Courgettehelften gevuld met kruidig gehakt in tomatensaus, gegratineerd met kaas. Met rijst, bulgur of brood erbij een compleet gerecht, en met 200 g gehakt zit je op zo'n 50 g per persoon.",
   "ingredienten": [
    {
     "titel": null,
@@ -2165,7 +2165,7 @@
   "meta": [
    "50 g gehakt per persoon"
   ],
-  "intro": "Turks/Grieks geïnspireerd: aubergine uit de grabbelbak, langzaam gegaard tot boterzacht en gevuld met een kruidig tomaat-uimengsel. Met 400 g gehakt zit je precies op 100 g per persoon; vegetarisch kan met extra tomaat en pijnboompitten in plaats van gehakt.",
+  "intro": "Turks/Grieks geïnspireerd: aubergine uit de grabbelbak, langzaam gegaard tot boterzacht en gevuld met een kruidig tomaat-uimengsel. Met 200 g gehakt zit je op 50 g per persoon; vegetarisch kan met extra tomaat en pijnboompitten in plaats van gehakt.",
   "ingredienten": [
    {
     "titel": null,
@@ -2226,7 +2226,7 @@
      "25 g boter + scheut room of melk",
      "rasp + sap van 1/2 citroen",
      "peper, zout",
-     "optioneel: kappertjes of geroosterde amandelschaafsel"
+     "optioneel: kappertjes of geroosterd amandelschaafsel"
     ]
    }
   ],
@@ -3674,7 +3674,7 @@
    {
     "titel": null,
     "items": [
-     "1 rol hartige taartdeeg of bladerdeeg (vorm 24-26 cm)",
+     "1 rol hartig taartdeeg of bladerdeeg (vorm 24-26 cm)",
      "1 krop andijvie, in reepjes",
      "5 bladeren palmkool, harde nerf eruit, in fijne reepjes",
      "1 winterwortel, grof geraspt",
@@ -6260,8 +6260,7 @@
     "titel": "Dressing",
     "items": [
      "4 el olijfolie",
-     "1",
-     "5 el appelazijn",
+     "1,5 el appelazijn",
      "1 tl dijonmosterd",
      "1 tl honing",
      "peper en zout"
