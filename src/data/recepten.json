@@ -2833,51 +2833,6 @@
  },
  {
   "pagina": 133,
-  "foto": "pasta-alla-norma",
-  "titel": "Pasta alla Norma",
-  "ondertitel": "met geroosterde aubergine, mozzarella en pijnboompitten",
-  "seizoen": "zomer",
-  "tags": [
-   "Hoofdgerecht",
-   "Italiaans"
-  ],
-  "personen": "Voor 4 personen",
-  "meta": [],
-  "intro": "Siciliaanse klassieker: aubergine uit de oven in een eenvoudige tomatensaus met knoflook en basilicum. Pecorino door de pasta, blokjes mozzarella en geroosterde pijnboompitten erover.",
-  "ingredienten": [
-   {
-    "titel": null,
-    "items": [
-     "2 aubergines (ca. 500 g)",
-     "50 ml olijfolie",
-     "3 el tomatentapenade",
-     "1 tl Italiaanse kruiden",
-     "2 tenen knoflook, in plakjes",
-     "2 blikken tomatenblokjes (à 400 g)",
-     "1 bakje basilicum (15 g)",
-     "300 g penne",
-     "100 g pecorino romano, geraspt",
-     "1 bol buffelmozzarella, in blokjes",
-     "4 el pijnboompitten, geroosterd",
-     "peper, zout"
-    ]
-   }
-  ],
-  "bereiding": [
-   "Verwarm de oven voor op 220 °C. Snijd de aubergines in plakken van ca. 2 cm en bestrijk ze aan beide kanten met olijfolie (houd 2 el apart voor de saus). Leg ze op een bakplaat met bakpapier en smeer de tapenade erover. Rooster ze in 20-25 minuten gaar en goudbruin. Bestrooi met de Italiaanse kruiden en snijd ze in blokjes.",
-   "Verhit intussen de achtergehouden 2 el olijfolie in een pan en bak de knoflook kort. Voeg de tomatenblokjes met hun vocht toe en laat ca. 10 minuten zonder deksel zachtjes pruttelen.",
-   "Kook ondertussen de pasta volgens de verpakking.",
-   "Roer de geroosterde aubergine door de saus en breng op smaak met peper en zout. Snijd de helft van het basilicum in reepjes en roer het erdoor.",
-   "Giet de pasta af, doe hem terug in de pan en schep de saus en de pecorino erdoor. Proef nog eens op peper en zout.",
-   "Verdeel over borden en garneer met de mozzarella, de rest van het basilicum en de pijnboompitten."
-  ],
-  "serveertip": null,
-  "tip": null,
-  "hoofdstuk": "zomer",
-  "slug": "pasta-alla-norma"
- },
- {
-  "pagina": 135,
   "foto": "tomatensoep",
   "titel": "Clara's tomatensoep",
   "ondertitel": "met gehaktballetjes en verse kruiden",
@@ -2923,7 +2878,7 @@
   "slug": "tomatensoep"
  },
  {
-  "pagina": 141,
+  "pagina": 139,
   "foto": "rodekool-ovenschotel",
   "titel": "Rodekool-ovenschotel",
   "ondertitel": "met varkenshaas, biet en aardappel",
@@ -2968,7 +2923,7 @@
   "slug": "rodekool-ovenschotel"
  },
  {
-  "pagina": 143,
+  "pagina": 141,
   "foto": "chinese-roerbak",
   "titel": "Chinese roerbak",
   "ondertitel": "met wortel, peper, gehakt en knoflook-gembersaus",
@@ -3013,7 +2968,7 @@
   "slug": "chinese-roerbak"
  },
  {
-  "pagina": 145,
+  "pagina": 143,
   "foto": "caldo-verde",
   "titel": "Caldo Verde",
   "ondertitel": "Portugese kool-aardappelsoep met chorizo en prei",
@@ -3058,7 +3013,7 @@
   "slug": "caldo-verde"
  },
  {
-  "pagina": 147,
+  "pagina": 145,
   "foto": "warme-salade-van-knolvenkel-aardappel-en-sperziebonen",
   "titel": "Warme salade van knolvenkel, aardappel en sperziebonen",
   "ondertitel": "met feta",
@@ -3112,7 +3067,7 @@
   "slug": "warme-salade-van-knolvenkel-aardappel-en-sperziebonen"
  },
  {
-  "pagina": 149,
+  "pagina": 147,
   "foto": "provencaalse-ovenschotel",
   "titel": "Provençaalse ovenschotel",
   "ondertitel": "met knolvenkel, sperziebonen, aardappel en kip",
@@ -3158,7 +3113,7 @@
   "slug": "provencaalse-ovenschotel"
  },
  {
-  "pagina": 151,
+  "pagina": 149,
   "foto": "hongaarse-goulash",
   "titel": "Hongaarse goulash",
   "ondertitel": "met aardappel, wortel, peper en tomaat",
@@ -3207,7 +3162,7 @@
   "slug": "hongaarse-goulash"
  },
  {
-  "pagina": 153,
+  "pagina": 151,
   "foto": "indonesische-sayur-lodeh",
   "titel": "Indonesische sayur lodeh",
   "ondertitel": "met spitskool, wortel en kip",
@@ -3257,7 +3212,7 @@
   "slug": "indonesische-sayur-lodeh"
  },
  {
-  "pagina": 155,
+  "pagina": 153,
   "foto": "ierse-colcannon",
   "titel": "Ierse colcannon",
   "ondertitel": "met palmkool en prei, met gebakken worst",
@@ -3301,7 +3256,7 @@
   "slug": "ierse-colcannon"
  },
  {
-  "pagina": 157,
+  "pagina": 155,
   "foto": "tunesische-pompoenstoof",
   "titel": "Tunesische pompoenstoof",
   "ondertitel": "met paprika, palmkool en lamsgehakt",
@@ -3353,7 +3308,7 @@
   "slug": "tunesische-pompoenstoof"
  },
  {
-  "pagina": 159,
+  "pagina": 157,
   "foto": "pompoen-andijvielasagne",
   "titel": "Pompoen-andijvielasagne",
   "ondertitel": "met ricotta en salie",
@@ -3400,7 +3355,7 @@
   "slug": "pompoen-andijvielasagne"
  },
  {
-  "pagina": 161,
+  "pagina": 159,
   "foto": "japanse-pompoen-kipcurry-kabocha-kare",
   "titel": "Japanse pompoen-kipcurry (kabocha kare)",
   "ondertitel": "met winterwortel en prei",
@@ -3447,7 +3402,7 @@
   "slug": "japanse-pompoen-kipcurry-kabocha-kare"
  },
  {
-  "pagina": 163,
+  "pagina": 161,
   "foto": "krulsla",
   "titel": "Krulsla",
   "ondertitel": "met geroosterde rode biet, geitenkaas en walnoten",
@@ -3500,7 +3455,7 @@
   "slug": "krulsla"
  },
  {
-  "pagina": 165,
+  "pagina": 163,
   "foto": "engelse-traybake",
   "titel": "Engelse traybake",
   "ondertitel": "met pastinaak, knolvenkel, aardappel en kip",
@@ -3546,7 +3501,7 @@
   "slug": "engelse-traybake"
  },
  {
-  "pagina": 167,
+  "pagina": 165,
   "foto": "turkse-lahmacun",
   "titel": "Turkse lahmacun",
   "ondertitel": "met lamsgehakt, paprika en peper",
@@ -3610,7 +3565,7 @@
   "slug": "turkse-lahmacun"
  },
  {
-  "pagina": 169,
+  "pagina": 167,
   "foto": "hollandse-andijvie-ovenschotel",
   "titel": "Hollandse andijvie-ovenschotel",
   "ondertitel": "met aardappel, spekjes en kaas",
@@ -3656,7 +3611,7 @@
   "slug": "hollandse-andijvie-ovenschotel"
  },
  {
-  "pagina": 171,
+  "pagina": 169,
   "foto": "hartige-taart",
   "titel": "Hartige taart",
   "ondertitel": "met andijvie, palmkool, feta en winterwortel",
@@ -3704,7 +3659,7 @@
   "slug": "hartige-taart"
  },
  {
-  "pagina": 173,
+  "pagina": 171,
   "foto": "pompoen-chili",
   "titel": "Pompoen-chili",
   "ondertitel": "met rundergehakt, bonen en rodekoolsalade",
@@ -3761,7 +3716,7 @@
   "slug": "pompoen-chili"
  },
  {
-  "pagina": 175,
+  "pagina": 173,
   "foto": "franse-salade",
   "titel": "Franse salade",
   "ondertitel": "met veldsla, winterpostelein, warme aardappel, spek en ei",
@@ -3814,7 +3769,7 @@
   "slug": "franse-salade"
  },
  {
-  "pagina": 177,
+  "pagina": 175,
   "foto": "pizzoccheri",
   "titel": "Pizzoccheri",
   "ondertitel": "met palmkool, aardappel, salieboter en kaas",
@@ -3861,7 +3816,7 @@
   "slug": "pizzoccheri"
  },
  {
-  "pagina": 179,
+  "pagina": 177,
   "foto": "libanese-traybake",
   "titel": "Libanese traybake",
   "ondertitel": "met pastinaak, knolvenkel en kalkoen-shawarma, met fattoush",
@@ -3933,7 +3888,7 @@
   "slug": "libanese-traybake"
  },
  {
-  "pagina": 181,
+  "pagina": 179,
   "foto": "sri-lankaanse-viscurry",
   "titel": "Sri Lankaanse viscurry",
   "ondertitel": "met aardappel en snijbiet, met palmkool-mallung",
@@ -3999,7 +3954,7 @@
   "slug": "sri-lankaanse-viscurry"
  },
  {
-  "pagina": 183,
+  "pagina": 181,
   "foto": "belgische-groenlofstoemp",
   "titel": "Belgische groenlofstoemp",
   "ondertitel": "met blauwe kaas, appel, hazelnoten en eendenborst",
@@ -4058,7 +4013,7 @@
   "slug": "belgische-groenlofstoemp"
  },
  {
-  "pagina": 185,
+  "pagina": 183,
   "foto": "koreaanse-bibimbap",
   "titel": "Koreaanse bibimbap",
   "ondertitel": "met varkensgehakt, wortel, raapsteel-namul en groenlof-geotjeori",
@@ -4137,7 +4092,7 @@
   "slug": "koreaanse-bibimbap"
  },
  {
-  "pagina": 187,
+  "pagina": 185,
   "foto": "thaise-rode-pompoencurry",
   "titel": "Thaise rode pompoencurry",
   "ondertitel": "met garnalen, winterwortel en munt",
@@ -4197,7 +4152,7 @@
   "slug": "thaise-rode-pompoencurry"
  },
  {
-  "pagina": 189,
+  "pagina": 187,
   "foto": "scandinavische-warme-salade-van-gele-biet",
   "titel": "Scandinavische warme salade van gele biet",
   "ondertitel": "met gerookte makreel, aardappel en veldsla",
@@ -4278,7 +4233,7 @@
   "slug": "scandinavische-warme-salade-van-gele-biet"
  },
  {
-  "pagina": 191,
+  "pagina": 189,
   "foto": "toscaanse-stoof-van-kievitsbonen",
   "titel": "Toscaanse stoof van kievitsbonen",
   "ondertitel": "met snijbiet, palmkool en salie-polpette",
@@ -4358,7 +4313,7 @@
   "slug": "toscaanse-stoof-van-kievitsbonen"
  },
  {
-  "pagina": 193,
+  "pagina": 191,
   "foto": "georgische-adjika-kip",
   "titel": "Georgische adjika-kip",
   "ondertitel": "met geroosterde aardappel, bietenpkhali en muntyoghurt",
@@ -4437,7 +4392,7 @@
   "slug": "georgische-adjika-kip"
  },
  {
-  "pagina": 195,
+  "pagina": 193,
   "foto": "peruaanse-causa",
   "titel": "Peruaanse causa",
   "ondertitel": "met gebakken zalm, avocado en groenlof-posteleinsalade",
@@ -4520,7 +4475,7 @@
   "slug": "peruaanse-causa"
  },
  {
-  "pagina": 197,
+  "pagina": 195,
   "foto": "indiase-keema-palak",
   "titel": "Indiase keema palak",
   "ondertitel": "met lamsgehakt, spinazie en munt-raita",
@@ -4593,7 +4548,7 @@
   "slug": "indiase-keema-palak"
  },
  {
-  "pagina": 199,
+  "pagina": 197,
   "foto": "bretonse-boekweitgalettes",
   "titel": "Bretonse boekweitgalettes",
   "ondertitel": "met gestoofde prei, gerookte forel en veldsla-posteleinsalade",
@@ -4675,7 +4630,7 @@
   "slug": "bretonse-boekweitgalettes"
  },
  {
-  "pagina": 201,
+  "pagina": 199,
   "foto": "mexicaanse-taco-s",
   "titel": "Mexicaanse taco's",
   "ondertitel": "met geroosterde pastinaak, chorizo en raapsteel-salsa verde",
@@ -4748,7 +4703,7 @@
   "slug": "mexicaanse-taco-s"
  },
  {
-  "pagina": 203,
+  "pagina": 201,
   "foto": "herfsttraybake",
   "titel": "Herfsttraybake",
   "ondertitel": "met pompoen, biet, venkel en witvis",
@@ -4812,7 +4767,7 @@
   "slug": "herfsttraybake"
  },
  {
-  "pagina": 205,
+  "pagina": 203,
   "foto": "marokkaanse-warme-linzensalade",
   "titel": "Marokkaanse warme linzensalade",
   "ondertitel": "met boerenkool, geroosterde winterwortel en runder-kefta",
@@ -4901,7 +4856,7 @@
   "slug": "marokkaanse-warme-linzensalade"
  },
  {
-  "pagina": 207,
+  "pagina": 205,
   "foto": "sichuan-kung-pao-kip",
   "titel": "Sichuan kung pao kip",
   "ondertitel": "met yacon, winterwortel en snijbiet",
@@ -4985,7 +4940,7 @@
   "slug": "sichuan-kung-pao-kip"
  },
  {
-  "pagina": 209,
+  "pagina": 207,
   "foto": "hollandse-rauwe-stamppot",
   "titel": "Hollandse rauwe stamppot",
   "ondertitel": "van veldsla, postelein en gestoofde prei met gebakken kabeljauw en bieslookboter",
@@ -5063,7 +5018,7 @@
   "slug": "hollandse-rauwe-stamppot"
  },
  {
-  "pagina": 211,
+  "pagina": 209,
   "foto": "vietnamese-bun-salade",
   "titel": "Vietnamese bún-salade",
   "ondertitel": "met knoflookgarnalen, rammenas-wortelpickle, groenlof en munt",
@@ -5144,7 +5099,7 @@
   "slug": "vietnamese-bun-salade"
  },
  {
-  "pagina": 213,
+  "pagina": 211,
   "foto": "oekraiense-borsjt",
   "titel": "Oekraïense borsjt",
   "ondertitel": "met rode biet, palmkool en gerookt spek, met dille-zure room en knoflookbroodjes",
@@ -5221,7 +5176,7 @@
   "slug": "oekraiense-borsjt"
  },
  {
-  "pagina": 215,
+  "pagina": 213,
   "foto": "griekse-prasorizo",
   "titel": "Griekse prasorizo",
   "ondertitel": "preirijst met lamskeftedes, munt-tzatziki en veldsla-radijssalade",
@@ -5305,7 +5260,7 @@
   "slug": "griekse-prasorizo"
  },
  {
-  "pagina": 217,
+  "pagina": 215,
   "foto": "kievitsbonenstoof-met-salsiccia",
   "titel": "Kievitsbonenstoof",
   "ondertitel": "met salsiccia en boerenkool",
@@ -5361,7 +5316,7 @@
   "slug": "kievitsbonenstoof-met-salsiccia"
  },
  {
-  "pagina": 219,
+  "pagina": 217,
   "foto": "hollandse-boerenkoolstamppot",
   "titel": "Hollandse boerenkoolstamppot",
   "ondertitel": "met rookworst en jus",
@@ -5431,7 +5386,7 @@
   "slug": "hollandse-boerenkoolstamppot"
  },
  {
-  "pagina": 221,
+  "pagina": 219,
   "foto": "indiase-dal-palak",
   "titel": "Indiase dal palak",
   "ondertitel": "met spinazie, rode linzen en tandoori-kip",
@@ -5512,7 +5467,7 @@
   "slug": "indiase-dal-palak"
  },
  {
-  "pagina": 223,
+  "pagina": 221,
   "foto": "britse-fish-pie",
   "titel": "Britse fish pie",
   "ondertitel": "met prei, kabeljauw en gerookte makreel, met veldsla-posteleinsalade",
@@ -5590,7 +5545,7 @@
   "slug": "britse-fish-pie"
  },
  {
-  "pagina": 225,
+  "pagina": 223,
   "foto": "yaconsoep",
   "titel": "Yaconsoep",
   "ondertitel": "met winterpostelein, prei en hazelnoot",
@@ -6017,6 +5972,51 @@
   "tip": "Blijft er over? Afgedekt blijven ze in de koelkast een paar dagen goed, en met bakpapier ertussen kun je ze invriezen. Opwarmen kan in een koekenpan met een klein beetje boter, of kort in de magnetron.",
   "hoofdstuk": "favorieten",
   "slug": "pannenkoeken"
+ },
+ {
+  "pagina": 227,
+  "foto": "pasta-alla-norma",
+  "titel": "Pasta alla Norma",
+  "ondertitel": "met geroosterde aubergine, mozzarella en pijnboompitten",
+  "seizoen": "favorieten",
+  "tags": [
+   "Hoofdgerecht",
+   "Italiaans"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [],
+  "intro": "Siciliaanse klassieker: aubergine uit de oven in een eenvoudige tomatensaus met knoflook en basilicum. Pecorino door de pasta, blokjes mozzarella en geroosterde pijnboompitten erover.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "2 aubergines (ca. 500 g)",
+     "50 ml olijfolie",
+     "3 el tomatentapenade",
+     "1 tl Italiaanse kruiden",
+     "2 tenen knoflook, in plakjes",
+     "2 blikken tomatenblokjes (à 400 g)",
+     "1 bakje basilicum (15 g)",
+     "300 g penne",
+     "100 g pecorino romano, geraspt",
+     "1 bol buffelmozzarella, in blokjes",
+     "4 el pijnboompitten, geroosterd",
+     "peper, zout"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 220 °C. Snijd de aubergines in plakken van ca. 2 cm en bestrijk ze aan beide kanten met olijfolie (houd 2 el apart voor de saus). Leg ze op een bakplaat met bakpapier en smeer de tapenade erover. Rooster ze in 20-25 minuten gaar en goudbruin. Bestrooi met de Italiaanse kruiden en snijd ze in blokjes.",
+   "Verhit intussen de achtergehouden 2 el olijfolie in een pan en bak de knoflook kort. Voeg de tomatenblokjes met hun vocht toe en laat ca. 10 minuten zonder deksel zachtjes pruttelen.",
+   "Kook ondertussen de pasta volgens de verpakking.",
+   "Roer de geroosterde aubergine door de saus en breng op smaak met peper en zout. Snijd de helft van het basilicum in reepjes en roer het erdoor.",
+   "Giet de pasta af, doe hem terug in de pan en schep de saus en de pecorino erdoor. Proef nog eens op peper en zout.",
+   "Verdeel over borden en garneer met de mozzarella, de rest van het basilicum en de pijnboompitten."
+  ],
+  "serveertip": null,
+  "tip": null,
+  "hoofdstuk": "favorieten",
+  "slug": "pasta-alla-norma"
  },
  {
   "pagina": 245,
