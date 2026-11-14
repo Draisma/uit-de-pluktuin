@@ -5967,6 +5967,58 @@
   "slug": "pasta-rode-saus"
  },
  {
+  "pagina": null,
+  "foto": "pannenkoeken",
+  "titel": "Pannenkoeken",
+  "ondertitel": "met geraspte appel en kaneel",
+  "seizoen": "favorieten",
+  "tags": [
+   "Gezinsmaaltijd",
+   "Vegetarisch",
+   "Hollands"
+  ],
+  "personen": "Voor 4 personen (ca. 18 pannenkoeken)",
+  "meta": [
+   "ca. 1 uur (waarvan 20 minuten rusten)"
+  ],
+  "intro": "Dunne, goudbruine Hollandse pannenkoeken zonder pakje. Geraspte appel en een snuf kaneel in het beslag maken ze zacht en net iets zoet, zodat ze zowel met stroop als met kaas of spek smaken. De hoeveelheid is ruim: wij eten er met z'n vieren een flinke stapel van.",
+  "ingredienten": [
+   {
+    "titel": "Beslag",
+    "items": [
+     "625 g bloem",
+     "flinke snuf zout",
+     "1 tl kaneel",
+     "1,25 l melk",
+     "5 grote eieren",
+     "2 à 3 appels",
+     "2 el olijfolie"
+    ]
+   },
+   {
+    "titel": "Bakken en beleggen",
+    "items": [
+     "boter om in te bakken",
+     "stroop, suiker of poedersuiker",
+     "geraspte kaas of ontbijtspek (optioneel)"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Beslag beginnen: zeef de bloem in een grote kom en meng met het zout en de kaneel. Schenk de helft van de melk erbij en klop tot een dik, glad beslag. Juist omdat het nog dik is, klop je de klontjes er makkelijk uit.",
+   "Eieren en melk: klop de eieren er één voor één door. Schenk daarna beetje bij beetje de rest van de melk erbij tot het beslag dun en vloeibaar is. Roer de olie erdoor.",
+   "Appel: schil de appels, rasp ze fijn en roer ze door het beslag.",
+   "Rusten (20 min): dek de kom af en laat het beslag staan. Het wordt er gladder van. Geen tijd? Dan kun je ook meteen bakken.",
+   "Pan heet: verhit een koekenpan of pannenkoekenpan op middelhoog vuur tot hij goed heet is en smelt er een klontje boter in. Met twee pannen tegelijk ben je in de helft van de tijd klaar.",
+   "Bakken (ca. 3 min per stuk): schep een soeplepel beslag in de pan en draai de pan rond zodat het zich dun verdeelt. Bak ongeveer 2 minuten tot de bovenkant droog oogt en de rand loslaat, keer de pannenkoek en bak de andere kant nog 1 minuut goudbruin.",
+   "Stapelen: leg de pannenkoeken op een bord onder een deksel of een tweede bord zodat ze warm blijven. Doe voor elke pannenkoek een klein klontje boter in de pan en roer het beslag af en toe door, want de appel zakt naar de bodem."
+  ],
+  "serveertip": "Zet stroop, suiker en geraspte kaas op tafel en laat iedereen zelf beleggen. Voor een spekpannenkoek bak je eerst een paar plakjes ontbijtspek uit en schenk je het beslag eroverheen.",
+  "tip": "Blijft er over? Afgedekt blijven ze in de koelkast een paar dagen goed, en met bakpapier ertussen kun je ze invriezen. Opwarmen kan in een koekenpan met een klein beetje boter, of kort in de magnetron.",
+  "hoofdstuk": "favorieten",
+  "slug": "pannenkoeken"
+ },
+ {
   "pagina": 243,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
