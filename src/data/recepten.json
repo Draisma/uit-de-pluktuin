@@ -6019,6 +6019,84 @@
   "slug": "pasta-alla-norma"
  },
  {
+  "pagina": null,
+  "foto": "burritos",
+  "titel": "Burrito's",
+  "ondertitel": "met kip, paprika, chilibonen en cheddar",
+  "seizoen": "favorieten",
+  "tags": [
+   "Gezinsmaaltijd",
+   "Mexicaans"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 30 minuten (waarvan 10 minuten oven)",
+   "ovenschaal"
+  ],
+  "intro": "Burrito's zonder pakje en zakje: de kruidenmix maak je zelf van acht potjes uit de kast. Kip, paprika en chilibonen in een pittige saus, opgerold in tortilla's en met cheddar uit de oven. Met een snelle dipsaus van crème fraîche erbij.",
+  "ingredienten": [
+   {
+    "titel": "Vulling",
+    "items": [
+     "2 uien, gesnipperd",
+     "2 tenen knoflook, fijngehakt",
+     "1 rode paprika, in reepjes",
+     "1 gele paprika, in reepjes",
+     "200 g kipfilet, in reepjes",
+     "scheutje olijfolie",
+     "100 ml water",
+     "1 blik chilibonen (400 g), afgespoeld",
+     "8 tortilla's",
+     "150 g geraspte kaas (het lekkerst met cheddar)"
+    ]
+   },
+   {
+    "titel": "Kruidenmix",
+    "items": [
+     "2 tl paprikapoeder",
+     "2 tl komijn",
+     "1 tl chilipoeder",
+     "1 tl knoflookpoeder",
+     "1 tl zout",
+     "½ tl zwarte peper",
+     "½ tl gedroogde oregano",
+     "½ tl korianderpoeder"
+    ]
+   },
+   {
+    "titel": "Dipsaus",
+    "items": [
+     "125 ml crème fraîche",
+     "1 teen knoflook, fijngehakt",
+     "1 el verse bieslook, fijngeknipt (of 1 tl gedroogd)",
+     "flinke snuf paprikapoeder",
+     "peper, zout"
+    ]
+   },
+   {
+    "titel": "Erbij",
+    "items": [
+     "guacamole",
+     "tortillachips"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 200 °C. Zet de kruiden voor de kruidenmix klaar en meng ze in een kommetje.",
+   "Bak de kip in een koekenpan met een scheutje olijfolie zachtjes rondom aan. Voeg de ui, knoflook en paprika toe en bak ca. 3 minuten mee.",
+   "Roer de kruidenmix en het water erdoor en laat een paar minuten pruttelen.",
+   "Schep de chilibonen erdoor en zet het vuur uit.",
+   "Meng voor de dipsaus de crème fraîche met de knoflook, bieslook en paprikapoeder. Breng op smaak met peper en zout.",
+   "Verdeel de vulling over de tortilla's en rol ze op. Leg ze naast elkaar in een ingevette ovenschaal en bestrooi met de kaas.",
+   "Bak de burrito's ca. 10 minuten in de oven, tot de kaas gesmolten en goudbruin is.",
+   "Serveer met guacamole, tortillachips en de dipsaus."
+  ],
+  "serveertip": null,
+  "tip": "Een kant-en-klaar burritopakket bevat zo'n zestien kruiden; deze mix doet het met de helft en smaakt net zo goed. Maak gerust een dubbele portie kruidenmix en bewaar hem in een potje.",
+  "hoofdstuk": "favorieten",
+  "slug": "burritos"
+ },
+ {
   "pagina": 245,
   "foto": "rabarbersiroop",
   "titel": "Rabarbersiroop",
