@@ -87,6 +87,20 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   font: 15px var(--serif); width: 190px; padding: 7px 12px; border: 1px solid var(--lijn); border-radius: 999px;
   background: #fff; color: var(--inkt);
 }
+/* navigatieknoppen, alleen als app (PWA) zonder browserbalk */
+.app-nav { display: none; gap: 2px; margin-left: -8px; }
+html.app .app-nav { display: flex; }
+.app-nav button {
+  display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 999px;
+  background: transparent; color: var(--inkt); cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.app-nav button:active { background: var(--papier-2); }
+.app-nav button:disabled { color: var(--lijn); cursor: default; background: transparent; }
+@media (min-width: 761px) and (max-width: 1180px) {
+  html.app .kop .wrap { gap: 16px; }
+  html.app .zoek-kort input { width: 150px; }
+}
+.app-nav svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 @media (max-width: 760px) {
   .kop .wrap { padding-top: 10px; padding-bottom: 10px; gap: 8px 16px; }
   .nav { order: 3; width: 100%; margin-left: 0; overflow-x: auto; flex-wrap: nowrap; gap: 18px; scrollbar-width: none; }

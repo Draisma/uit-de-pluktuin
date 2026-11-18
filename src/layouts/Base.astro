@@ -37,12 +37,26 @@ const pad = Astro.url.pathname;
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline>
+      if (matchMedia('(display-mode: standalone)').matches || navigator.standalone) document.documentElement.classList.add('app');
+    </script>
     <slot name="head" />
   </head>
   <body data-hoofdstuk={hoofdstuk}>
     <div class="band"></div>
     <header class="kop">
       <div class="wrap">
+        <div class="app-nav" role="group" aria-label="Navigatie">
+          <button type="button" data-nav="terug" aria-label="Terug" title="Terug">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <button type="button" data-nav="vooruit" aria-label="Vooruit" title="Vooruit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
+          </button>
+          <button type="button" data-nav="vernieuw" aria-label="Vernieuwen" title="Vernieuwen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.5v4.2h-4.2" /></svg>
+          </button>
+        </div>
         <a class="merk" href="/">Uit de <em>pluktuin</em></a>
         <nav class="nav" aria-label="Hoofdstukken">
           {hoofdstukken.map((h) => (
@@ -67,5 +81,26 @@ const pad = Astro.url.pathname;
       </div>
     </footer>
     <Vergroot />
+    <script is:inline>
+      (() => {
+        const nav = window.navigation;
+        const terug = document.querySelector('[data-nav="terug"]');
+        const vooruit = document.querySelector('[data-nav="vooruit"]');
+        const thuis = location.pathname === '/';
+        const kanTerug = () => (nav && 'canGoBack' in nav ? nav.canGoBack : history.length > 1);
+        const bijwerken = () => {
+          if (nav && 'canGoForward' in nav) vooruit.disabled = !nav.canGoForward;
+          terug.disabled = thuis && !kanTerug();
+        };
+        bijwerken();
+        addEventListener('pageshow', bijwerken);
+        terug.addEventListener('click', () => {
+          if (kanTerug()) history.back();
+          else location.href = '/';
+        });
+        vooruit.addEventListener('click', () => history.forward());
+        document.querySelector('[data-nav="vernieuw"]').addEventListener('click', () => location.reload());
+      })();
+    </script>
   </body>
 </html>
