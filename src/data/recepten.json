@@ -5608,63 +5608,6 @@
   "slug": "yaconsoep"
  },
  {
-  "pagina": null,
-  "foto": "paprika-pompoensoep",
-  "titel": "Paprika-pompoensoep",
-  "ondertitel": "met feta en stokbrood",
-  "seizoen": "herfst",
-  "tags": [
-   "Soep",
-   "Vegetarisch"
-  ],
-  "personen": "Voor 4 personen",
-  "meta": [
-   "ca. 40 minuten"
-  ],
-  "intro": "Romige soep van pompoen en gegrilde paprika, met reepjes paprika en verkruimelde feta erop en warm stokbrood erbij. Of de cajunkruiden erin gaan, beslis je tijdens het koken: zonder blijft de soep zacht en zoet, met wordt hij warm en een beetje pittig.",
-  "ingredienten": [
-   {
-    "titel": "Uit de pluktuin",
-    "items": [
-     "800 g pompoen, geschild en in blokjes (of koelverse flespompoenstukjes)"
-    ]
-   },
-   {
-    "titel": "Soep",
-    "items": [
-     "2 uien",
-     "3 tenen knoflook",
-     "4 el olijfolie",
-     "2 tl cajunkruiden (naar keuze)",
-     "1 groentebouillonblokje",
-     "750 ml water",
-     "1 pot gegrilde rode paprika's (ca. 295 g)",
-     "250 ml kookroom",
-     "peper en zout"
-    ]
-   },
-   {
-    "titel": "Erbij",
-    "items": [
-     "150 g feta",
-     "1 stokbrood om af te bakken"
-    ]
-   }
-  ],
-  "bereiding": [
-   "Verwarm de oven voor op 220 °C. Snipper de uien en hak de knoflook fijn.",
-   "Verhit de olie in een soeppan en bak de ui en de pompoen 5 minuten zachtjes op middelhoog vuur. Bak de knoflook, en als je ze gebruikt de cajunkruiden, nog 3 minuten mee.",
-   "Voeg het water en het bouillonblokje toe, breng aan de kook en laat 20 minuten zachtjes koken.",
-   "Bak intussen het stokbrood in 6-8 minuten af in het midden van de oven. Laat de paprika uitlekken en snijd hem in dunne reepjes.",
-   "Doe de kookroom en de helft van de paprika bij de soep en pureer met de staafmixer helemaal glad. Breng op smaak met peper en eventueel zout (de feta is al zout).",
-   "Schep de soep in kommen, leg de rest van de paprikareepjes erop en verkruimel de feta erover. Serveer met het warme stokbrood."
-  ],
-  "serveertip": null,
-  "tip": "Zonder cajunkruiden is een snuf gerookt paprikapoeder ook lekker: dat past goed bij de gegrilde paprika.",
-  "hoofdstuk": "herfst",
-  "slug": "paprika-pompoensoep"
- },
- {
   "pagina": 227,
   "foto": "exotische-rijst",
   "titel": "Exotische rijst",
@@ -6152,6 +6095,58 @@
   "tip": "Een kant-en-klaar burritopakket bevat zo'n zestien kruiden; deze mix doet het met de helft en smaakt net zo goed. Maak gerust een dubbele portie kruidenmix en bewaar hem in een potje.",
   "hoofdstuk": "favorieten",
   "slug": "burritos"
+ },
+ {
+  "pagina": null,
+  "foto": "paprika-pompoensoep",
+  "titel": "Paprika-pompoensoep",
+  "ondertitel": "met feta en stokbrood",
+  "seizoen": "favorieten",
+  "tags": [
+   "Soep",
+   "Vegetarisch"
+  ],
+  "personen": "Voor 4 personen",
+  "meta": [
+   "ca. 40 minuten"
+  ],
+  "intro": "Romige soep van pompoen en gegrilde paprika, met reepjes paprika en verkruimelde feta erop en warm stokbrood erbij. Of de cajunkruiden erin gaan, beslis je tijdens het koken: zonder blijft de soep zacht en zoet, met wordt hij warm en een beetje pittig.",
+  "ingredienten": [
+   {
+    "titel": "Soep",
+    "items": [
+     "800 g pompoen, geschild en in blokjes (of koelverse flespompoenstukjes)",
+     "2 uien",
+     "3 tenen knoflook",
+     "4 el olijfolie",
+     "2 tl cajunkruiden (naar keuze)",
+     "1 groentebouillonblokje",
+     "750 ml water",
+     "1 pot gegrilde rode paprika's (ca. 295 g)",
+     "250 ml kookroom",
+     "peper en zout"
+    ]
+   },
+   {
+    "titel": "Erbij",
+    "items": [
+     "150 g feta",
+     "1 stokbrood om af te bakken"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 220 °C. Snipper de uien en hak de knoflook fijn.",
+   "Verhit de olie in een soeppan en bak de ui en de pompoen 5 minuten zachtjes op middelhoog vuur. Bak de knoflook, en als je ze gebruikt de cajunkruiden, nog 3 minuten mee.",
+   "Voeg het water en het bouillonblokje toe, breng aan de kook en laat 20 minuten zachtjes koken.",
+   "Bak intussen het stokbrood in 6-8 minuten af in het midden van de oven. Laat de paprika uitlekken en snijd hem in dunne reepjes.",
+   "Doe de kookroom en de helft van de paprika bij de soep en pureer met de staafmixer helemaal glad. Breng op smaak met peper en eventueel zout (de feta is al zout).",
+   "Schep de soep in kommen, leg de rest van de paprikareepjes erop en verkruimel de feta erover. Serveer met het warme stokbrood."
+  ],
+  "serveertip": null,
+  "tip": "Zonder cajunkruiden is een snuf gerookt paprikapoeder ook lekker: dat past goed bij de gegrilde paprika.",
+  "hoofdstuk": "favorieten",
+  "slug": "paprika-pompoensoep"
  },
  {
   "pagina": 247,
