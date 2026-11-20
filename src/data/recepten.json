@@ -6310,6 +6310,48 @@
   "slug": "tiramisu"
  },
  {
+  "pagina": null,
+  "foto": "kruidnoten",
+  "titel": "Kruidnoten",
+  "ondertitel": "pepernoten uit eigen oven",
+  "seizoen": "zoet",
+  "tags": [
+   "Koekjes",
+   "Sinterklaas"
+  ],
+  "personen": "Voor ca. 70 stuks",
+  "meta": [
+   "bakplaat met bakpapier",
+   "40 minuten"
+  ],
+  "intro": "Zelfgebakken kruidnoten voor Sinterklaas: één kom, zes ingrediënten en het deeg hoeft niet te rusten. Ze komen nog wat zacht uit de oven en worden knapperig terwijl ze afkoelen.",
+  "ingredienten": [
+   {
+    "titel": null,
+    "items": [
+     "250 g zelfrijzend bakmeel",
+     "125 g donkerbruine basterdsuiker",
+     "4 tl speculaaskruiden",
+     "mespunt zout",
+     "100 g koude roomboter",
+     "6 el melk"
+    ]
+   }
+  ],
+  "bereiding": [
+   "Verwarm de oven voor op 175 °C (boven- en onderwarmte) en bekleed een bakplaat met bakpapier.",
+   "Meng het bakmeel, de basterdsuiker, de speculaaskruiden en het zout in een kom.",
+   "Snijd de koude boter in blokjes en voeg ze met de melk toe. Kneed met de hand tot een stevige bal deeg. Rusten is niet nodig.",
+   "Rol balletjes ter grootte van een flinke knikker en leg ze met wat ruimte ertussen op de bakplaat.",
+   "Bak ze in ca. 25 minuten gaar; kleine balletjes kun je na 20 minuten al controleren. Ze zijn klaar als ze stevig zijn maar nog een klein beetje meegeven.",
+   "Laat ze op de plaat afkoelen, dan worden ze bros en knapperig."
+  ],
+  "serveertip": null,
+  "tip": "Kruimelt het deeg, kneed dan wat langer of voeg 1 el melk extra toe. In een goed sluitende trommel blijven de kruidnoten 2 tot 3 weken lekker. Rauw deeg, strak in folie, bewaar je een week in de koelkast of tot 3 maanden in de vriezer.",
+  "hoofdstuk": "zoet",
+  "slug": "kruidnoten"
+ },
+ {
   "pagina": 265,
   "foto": "salade-van-veldsla-winterpostelein-en-andijvie",
   "titel": "Salade van veldsla, winterpostelein en andijvie",
