@@ -49,7 +49,7 @@ jobs:
 
       # De drukfoto's worden bewaard tussen runs; alleen nieuwe of gewijzigde foto's worden omgezet.
       - name: Drukfoto's uit de cache halen
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: drukfotos
           key: drukfotos-${{ hashFiles('public/fotos/*-1600.webp', 'boek/drukfotos.py') }}
