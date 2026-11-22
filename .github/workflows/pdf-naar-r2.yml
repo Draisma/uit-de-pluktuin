@@ -40,26 +40,27 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+          cache: pip
+          cache-dependency-path: .github/workflows/pdf-naar-r2.yml
 
+      # Geen eigen Chromium downloaden: de runner heeft Google Chrome al (PLAYWRIGHT_CHANNEL hieronder).
       - name: Pillow en Playwright installeren
-        run: |
-          pip install pillow playwright
-          python -m playwright install --with-deps chromium
+        run: pip install pillow playwright
 
-      - name: Drukfoto's maken uit de webfoto's
-        run: |
-          python - public/fotos fotos <<'PY'
-          import os, sys
-          from PIL import Image
-          src, uit = sys.argv[1], sys.argv[2]
-          os.makedirs(uit, exist_ok=True)
-          for f in os.listdir(src):
-              if f.endswith('-1600.webp'):
-                  Image.open(os.path.join(src, f)).convert('RGB').save(os.path.join(uit, f[:-10] + '.jpeg'), quality=92)
-          PY
-          python boek/drukfotos.py fotos drukfotos
+      # De drukfoto's worden bewaard tussen runs; alleen nieuwe of gewijzigde foto's worden omgezet.
+      - name: Drukfoto's uit de cache halen
+        uses: actions/cache@v4
+        with:
+          path: drukfotos
+          key: drukfotos-${{ hashFiles('public/fotos/*-1600.webp', 'boek/drukfotos.py') }}
+          restore-keys: drukfotos-
+
+      - name: Drukfoto's bijwerken
+        run: python boek/drukfotos.py --web public/fotos drukfotos
 
       - name: Boek bouwen
+        env:
+          PLAYWRIGHT_CHANNEL: chrome
         run: |
           python boek/bouw.py drukfotos boek.pdf --schrijf | tee bouw.log
           if ! git diff --quiet -- src/data; then

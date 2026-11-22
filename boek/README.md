@@ -6,9 +6,9 @@ De pdf van *Uit de pluktuin 2026* (op dl.fldr.nl) wordt gebouwd uit dezelfde geg
 | --- | --- |
 | `bouw.py` | Bouwt het boek als html en zet het met Playwright/Chromium om naar een A4-pdf. De inhoudsopgave en de lijsten op de hoofdstukpagina's zijn klikbaar (elke pagina krijgt de slug als anker). Met `--schrijf` zet hij de paginanummers terug in `recepten.json` en `eetclub.json` |
 | `boek.css` | De opmaak van het boek: A4, kleuren per hoofdstuk, ingrediëntenvak, genummerde stappen |
-| `drukfotos.py` | Snijdt de originele foto's bij tot A4 (1240×1754, JPEG q80) voor in de pdf |
+| `drukfotos.py` | Snijdt de foto's bij tot A4 (1240×1754, JPEG q80) voor in de pdf. Met `--web public/fotos UITMAP` gebruikt hij de webfoto's en zet hij alleen nieuwe of gewijzigde foto's om (bijgehouden in `UITMAP/.bron.json`) |
 | `fotoprompts.json` | De Gemini-prompt per foto, op slug |
-| `bouw-uit-webfotos.sh` | Bouwt het boek uit de webfoto's in `public/fotos` en schrijft de paginanummers terug; de originele foto's zijn dan niet nodig |
+| `bouw-uit-webfotos.sh` | Bouwt het boek uit de webfoto's in `public/fotos` en schrijft de paginanummers terug; de originele foto's zijn dan niet nodig. De drukfoto's blijven in `.cache/drukfotos` staan, dus een tweede keer gaat veel sneller |
 | `hernoem-download.sh` | Verplaatst de nieuwste Gemini-download naar `kookboek-fotos/SLUG.jpeg` |
 | `fonts/` | Playfair Display, Lora en Caveat (SIL Open Font License) |
 

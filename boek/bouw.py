@@ -315,7 +315,8 @@ FIT_JS = '''
 async def render_pdf(doc_path, pdf_path):
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
-        br = await p.chromium.launch()
+        # PLAYWRIGHT_CHANNEL=chrome gebruikt de Chrome die al op de machine staat (zoals op de GitHub-runner)
+        br = await p.chromium.launch(channel=os.environ.get('PLAYWRIGHT_CHANNEL') or None)
         pg = await br.new_page()
         await pg.goto('file://' + doc_path)
         await pg.evaluate('document.fonts.ready')
