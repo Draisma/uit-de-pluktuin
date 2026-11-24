@@ -4,6 +4,18 @@ Website van het seizoenskookboek *Uit de pluktuin 2026*: recepten met de wekelij
 
 Statische site, gebouwd met [Astro](https://astro.build) en gehost op Cloudflare.
 
+## Gemaakt met AI
+
+Dit project is gemaakt met hulp van AI:
+
+- **Recepten**: bedacht samen met [Claude](https://claude.ai) (Anthropic), op basis van de wekelijkse oogstbrief van De Gagelgaard. Keuze, aanpassingen en eindredactie door Florian Draisma.
+- **Foto's**: gegenereerd met [Gemini](https://gemini.google.com) (Google). Het zijn geen foto's van echt gekookte gerechten, maar een impressie van hoe het gerecht eruit kan zien. De prompt per foto staat in `boek/fotoprompts.json`.
+- **Code**: de website, de scripts en de opmaak van het boek zijn met Claude geschreven. Commits die Claude maakte hebben Florian als auteur en Claude als committer en co-auteur (`Co-Authored-By`).
+
+Zie je een fout in een recept? Laat het weten via kookboek@fldr.nl of open een issue.
+
+Op de site staat dezelfde uitleg in het [voorwoord](https://kookboek.fldr.nl/voorwoord/#ai).
+
 ## Lokaal draaien
 
 ```sh

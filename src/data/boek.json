@@ -20,7 +20,16 @@
       "Oventemperaturen gaan uit van een gewone oven; bij hetelucht kan het meestal 10 tot 20 graden lager.",
       "Geen palmkool, snijbiet of raapsteel bij de hand? Bijna elk blad uit de tuin kan het overnemen. Proef, pas aan en maak het je eigen."
     ],
-    "slot": "Eet smakelijk!"
+    "slot": "Eet smakelijk!",
+    "over_ai": {
+      "titel": "Gemaakt met AI",
+      "alineas": [
+        "Dit kookboek is gemaakt met hulp van AI, en dat vermeld ik graag eerlijk.",
+        "De recepten zijn bedacht samen met Claude, de AI-assistent van Anthropic. Elke week ging de oogstbrief erin en kwamen er voorstellen uit voor gerechten met wat er die week te plukken viel. De keuze, de aanpassingen en de eindredactie zijn van mij.",
+        "De foto's zijn gemaakt met Gemini van Google. Het zijn dus geen foto's van gerechten die echt op tafel stonden, maar een impressie van hoe het gerecht eruit kan zien. Jouw versie ziet er anders uit, en dat is prima.",
+        "Ook de website en de opmaak van het boek zijn met Claude gebouwd. Zie je een fout in een recept, een vreemde hoeveelheid of een stap die niet klopt? Laat het me weten via kookboek@fldr.nl."
+      ]
+    }
   },
   "hoofdstukken": [
     {"slug": "lente", "nummer": 1, "titel": "Lente", "periode": "mei en juni", "foto": "hoofdstuk-lente", "kleur": "#5f8f45",
