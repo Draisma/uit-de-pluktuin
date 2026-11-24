@@ -208,7 +208,12 @@ def voorwoord():
         li = li.replace('voor 4 personen', 'voor <b>4 personen</b>')
         li = li.replace('Bij Uit de pluktuin', 'Bij <i>Uit de pluktuin</i>')
         o += '<li>%s</li>' % li
-    o += '</ul><p class="sign">%s</p></div>' % E(v['slot'])
+    o += '</ul>'
+    ai = v.get('over_ai')
+    if ai:
+        # In het boek zonder de openingszin: de rest van de uitleg past nog op de voorwoordpagina
+        o += '<h3>%s</h3><div class="ai">%s</div>' % (E(ai['titel']), ''.join('<p>%s</p>' % E(a) for a in ai['alineas'][1:]))
+    o += '<p class="sign">%s</p></div>' % E(v['slot'])
     return o
 
 

@@ -100,6 +100,7 @@ a.te, .tocch h4 a { color: inherit; text-decoration: none; }
 .how { margin: 0; padding: 0; list-style: none; }
 .how li { font-size: 9.8pt; line-height: 1.5; padding: 2mm 0 2mm 7mm; border-bottom: .5pt solid #e5dccd; position: relative; }
 .how li::before { content: ''; position: absolute; left: 1mm; top: 3.6mm; width: 2.2mm; height: 2.2mm; border-radius: 50%; background: #a4462c; opacity: .7; }
+.prose .ai p { font-size: 9pt; line-height: 1.5; margin-bottom: 2.2mm; color: #4c433c; }
 .sign { font-family: 'Caveat'; font-size: 22pt !important; color: #a4462c; margin-top: 6mm !important; }
 .toccols { column-count: 2; column-gap: 9mm; }
 .tocch { break-inside: auto; margin-bottom: 4mm; }
